@@ -59,5 +59,6 @@ class Login:
 
 if __name__ == '__main__':
     import requests
+    from config import Config
     s=requests.Session()
-    Login(s).get_login_session()
+    Login(s,Config.admin_user).get_login_session()
