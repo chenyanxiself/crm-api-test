@@ -268,7 +268,7 @@ base_data = [
                 'name': '编辑标签',
                 'api': '/social-api/api/channel/tag/edit',
                 'method': 'PUT',
-                'parms': {},
+                'params': {},
                 'body': {"id":"12","name":"1","type":2,"categoryId":"1"}
             },
             {
