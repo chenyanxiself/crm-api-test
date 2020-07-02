@@ -9,8 +9,9 @@ class Config:
         'password': 'sS123456',
     }
     test_user = {
-        'username': 'zhaojingbo',
-        'password': 'sS123456',
+        'username': 'apitest',
+        'password': 'Zhiqingchun8888',
+        'role_id':1275678397007192065
     }
     login_url = 'https://bd2.bd888.online/login'
     verify_img_url = 'http://bd2.bd888.online/getVerifyCode'
@@ -19,4 +20,5 @@ class Config:
         'apiKey': 'xa8tTauIIII4MGhwMSYiNkwG',
         'secretKey': 'E32T1NjOjoIqy2EgTomfQLGfzoTsKMna'
     }
+    base_host = 'https://bd2.bd888.online'
 

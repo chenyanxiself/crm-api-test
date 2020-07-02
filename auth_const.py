@@ -41,9 +41,9 @@ base_data = [
                                          "id": "1273918541250224129"},
                             },
                             {
-                                'id': 814,
+                                'id': 808,
                                 'name': '删除汇总数据',
-                                'api': '/social-api/api/channel/channelTableValue/accountGroupCollectDelete/123456721',
+                                'api': '/social-api/api/channel/channelTableValue/accountGroupCollectDelete/95986',
                                 'method': 'DELETE',
                                 'params': {},
                                 'body': {},
@@ -51,7 +51,7 @@ base_data = [
                             {
                                 'id': 809,
                                 'name': '查看报表统计',
-                                'api': 'social-api/api/channel/statistical/accountGroup/overview?_t=1593503484&channelFlag=2',
+                                'api': '/social-api/api/channel/statistical/accountGroup/overview?_t=1593503484&channelFlag=2',
                                 'method': 'GET',
                                 'params': {},
                                 'body': {},
@@ -139,7 +139,7 @@ base_data = [
                             {
                                 'id': 814,
                                 'name': '删除汇总数据',
-                                'api': '/social-api/api/channel/channelTableValue/delete/1273096166979985409',
+                                'api': '/social-api/api/channel/channelTableValue/delete/9895',
                                 'method': 'DELETE',
                                 'params': {},
                                 'body': {}
@@ -161,6 +161,7 @@ base_data = [
                             {
                                 'id': 816,
                                 'name': '查看渠道列表',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/queryChannelAccount',
                                 'params': {},
                                 'body': {"channelFlag": 1, "column": "createTime", "order": "desc",
@@ -170,6 +171,7 @@ base_data = [
                             {
                                 'id': 817,
                                 'name': '编辑',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/editAccountGroup',
                                 'params': {},
                                 'body': {"channelFlag": 1, "name": "测试", "code": "CS",
@@ -179,6 +181,7 @@ base_data = [
                             {
                                 'id': 822,
                                 'name': '启用',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/enabledChannel',
                                 'params': {},
                                 'body': {"id": "1277886208147513345"}
@@ -186,6 +189,7 @@ base_data = [
                             {
                                 'id': 823,
                                 'name': '禁用',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/disabledChannel',
                                 'params': {},
                                 'body': {"id": "1277886208147513345"}
@@ -193,6 +197,7 @@ base_data = [
                             {
                                 'id': 825,
                                 'name': '新建',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/add',
                                 'params': {},
                                 'body': {"channelFlag": 1, "name": "测试1", "code": "CS",
@@ -261,14 +266,10 @@ base_data = [
             {
                 'id': 221,
                 'name': '编辑标签',
-                'api': '/social-api/api/channel/tagCategory/edit',
+                'api': '/social-api/api/channel/tag/edit',
                 'method': 'PUT',
-                'params': {},
-                'body': {"id": "1273444722643361794", "name": "test", "children": [
-                    {"id": "1274222560149561346", "name": "kevin", "type": 2, "categoryId": "1273444722643361794"},
-                    {"id": "1277438167582040065", "name": "1", "type": 2, "categoryId": "1273444722643361794"},
-                    {"id": "1277896932286586882", "name": "test", "type": 2, "categoryId": "1273444722643361794"}],
-                         "type": 1}
+                'parms': {},
+                'body': {"id":"12","name":"1","type":2,"categoryId":"1"}
             },
             {
                 'id': 222,
@@ -351,9 +352,9 @@ base_data = [
 
 customer_data = [
     {
-        'id':123,
-        'name':'工作台',
-        'children':[
+        'id': 123,
+        'name': '工作台',
+        'children': [
             {
                 'id':169,
                 'name':'查看新增线索',
