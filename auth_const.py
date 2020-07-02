@@ -940,7 +940,8 @@ system_data = [
         ]
     }
 ]
-list_test = [
+
+list_test_1 = [
     {
         'id': 1,
         'name': '社交大数据平台',
@@ -951,6 +952,20 @@ list_test = [
                 'children': base_data
             },
             {
+                'id':6,
+                'name':'系统设置',
+                'children':system_data
+            }
+        ]
+    }
+]
+
+list_test_2 = [
+    {
+        'id': 1,
+        'name': '社交大数据平台',
+        'children': [
+            {
                 'id':113,
                 'name':'客户管理',
                 'children':customer_data
@@ -960,11 +975,6 @@ list_test = [
                 'name':'商业智能',
                 'children':business_data
             },
-            {
-                'id':6,
-                'name':'系统设置',
-                'children':system_data
-            }
         ]
     }
 ]

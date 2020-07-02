@@ -6,7 +6,7 @@
 from login import Login
 import requests,json,copy
 from config import Config
-from auth_const import list_test
+from auth_const import list_test_1
 
 class Main:
     def __init__(self):
@@ -22,7 +22,7 @@ class Main:
         t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
         self.session_tester: requests.Session=t
     def start(self):
-        self.domain(list_test,["3", "4", "5", "701", "2"])
+        self.domain(list_test_1,["3", "4", "5", "701", "2"])
 
     def domain(self,item,auth_list:list):
         for i in item:
