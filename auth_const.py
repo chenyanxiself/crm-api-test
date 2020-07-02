@@ -41,9 +41,9 @@ base_data = [
                                          "id": "1273918541250224129"},
                             },
                             {
-                                'id': 814,
+                                'id': 808,
                                 'name': '删除汇总数据',
-                                'api': '/social-api/api/channel/channelTableValue/accountGroupCollectDelete/123456721',
+                                'api': '/social-api/api/channel/channelTableValue/accountGroupCollectDelete/95986',
                                 'method': 'DELETE',
                                 'params': {},
                                 'body': {},
@@ -51,7 +51,7 @@ base_data = [
                             {
                                 'id': 809,
                                 'name': '查看报表统计',
-                                'api': 'social-api/api/channel/statistical/accountGroup/overview?_t=1593503484&channelFlag=2',
+                                'api': '/social-api/api/channel/statistical/accountGroup/overview?_t=1593503484&channelFlag=2',
                                 'method': 'GET',
                                 'params': {},
                                 'body': {},
@@ -139,7 +139,7 @@ base_data = [
                             {
                                 'id': 814,
                                 'name': '删除汇总数据',
-                                'api': '/social-api/api/channel/channelTableValue/delete/1273096166979985409',
+                                'api': '/social-api/api/channel/channelTableValue/delete/9895',
                                 'method': 'DELETE',
                                 'params': {},
                                 'body': {}
@@ -161,6 +161,7 @@ base_data = [
                             {
                                 'id': 816,
                                 'name': '查看渠道列表',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/queryChannelAccount',
                                 'params': {},
                                 'body': {"channelFlag": 1, "column": "createTime", "order": "desc",
@@ -170,6 +171,7 @@ base_data = [
                             {
                                 'id': 817,
                                 'name': '编辑',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/editAccountGroup',
                                 'params': {},
                                 'body': {"channelFlag": 1, "name": "测试", "code": "CS",
@@ -179,6 +181,7 @@ base_data = [
                             {
                                 'id': 822,
                                 'name': '启用',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/enabledChannel',
                                 'params': {},
                                 'body': {"id": "1277886208147513345"}
@@ -186,6 +189,7 @@ base_data = [
                             {
                                 'id': 823,
                                 'name': '禁用',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/disabledChannel',
                                 'params': {},
                                 'body': {"id": "1277886208147513345"}
@@ -193,6 +197,7 @@ base_data = [
                             {
                                 'id': 825,
                                 'name': '新建',
+                                'method': 'POST',
                                 'api': '/social-api/api/channel/channel/add',
                                 'params': {},
                                 'body': {"channelFlag": 1, "name": "测试1", "code": "CS",
@@ -261,14 +266,10 @@ base_data = [
             {
                 'id': 221,
                 'name': '编辑标签',
-                'api': '/social-api/api/channel/tagCategory/edit',
+                'api': '/social-api/api/channel/tag/edit',
                 'method': 'PUT',
                 'parms': {},
-                'body': {"id": "1273444722643361794", "name": "test", "children": [
-                    {"id": "1274222560149561346", "name": "kevin", "type": 2, "categoryId": "1273444722643361794"},
-                    {"id": "1277438167582040065", "name": "1", "type": 2, "categoryId": "1273444722643361794"},
-                    {"id": "1277896932286586882", "name": "test", "type": 2, "categoryId": "1273444722643361794"}],
-                         "type": 1}
+                'body': {"id":"12","name":"1","type":2,"categoryId":"1"}
             },
             {
                 'id': 222,
@@ -351,135 +352,135 @@ base_data = [
 
 customer_data = [
     {
-        'id':123,
-        'name':'工作台',
-        'children':[
+        'id': 123,
+        'name': '工作台',
+        'children': [
             {
-                'id':169,
-                'name':'查看新增线索',
-                'api':'/CrmBackLog/todayLeads',
-                'method':'POST',
-                'parms':{},
-                'body':{"page":1,"limit":15,"search":"","type":4,"isSub":1,"label":2}
-            },{
-                'id':170,
-                'name':'查看新增客户',
-                'api':'/CrmBackLog/todayCustomer',
-                'method':'POST',
-                'parms':{},
-                'body':{"page":1,"limit":15,"search":"","type":5,"isSub":1,"label":2}
-            },{
-                'id':171,
-                'name':'查看新增跟进记录',
-                'api':'/Crm/Instrument/queryRecordConunt',
-                'method':'POST',
-                'parms':{},
-                'body':{"page":1,"limit":15,"search":"","type":4,"isSub":1,"label":2}
-            },{
-                'id':172,
-                'name':'查看逾期未联系客户',
-                'api':'/CrmBackLog/todayCustomer',
-                'method':'POST',
-                'parms':{},
-                'body':{"page":1,"limit":15,"search":"","type":2,"isSub":1,"label":2}
-            },{
-                'id':173,
-                'name':'查看逾期未联系线索',
-                'api':'/CrmBackLog/todayLeads',
-                'method':'POST',
-                'parms':{},
-                'body':{"page":1,"limit":15,"search":"","type":2,"isSub":1,"label":2}
-            },{
-                'id':713,
-                'name':'客户转化阶段漏斗',
-                'api':'/biCustomer/convertcus',
-                'method':'POST',
-                'parms':{},
-                'body':{"startTime":"2020-06-30 00:00:00","endTime":"2020-06-30 23:59:59","creator":"73"},
-                'header':{'Content-Type':'application/x-www-form-urlencoded'}
-            },{
-                'id':714,
-                'name':'新增客户跟进状态漏斗',
-                'api':'/biCustomer/cusfollow',
-                'method':'POST',
-                'parms':{},
-                'body':{"startTime":"2020-06-30 00:00:00","endTime":"2020-06-30 23:59:59","creator":"73"},
-                'header':{'Content-Type':'application/x-www-form-urlencoded'}
+                'id': 169,
+                'name': '查看新增线索',
+                'api': '/CrmBackLog/todayLeads',
+                'method': 'POST',
+                'parms': {},
+                'body': {"page": 1, "limit": 15, "search": "", "type": 4, "isSub": 1, "label": 2}
+            }, {
+                'id': 170,
+                'name': '查看新增客户',
+                'api': '/CrmBackLog/todayCustomer',
+                'method': 'POST',
+                'parms': {},
+                'body': {"page": 1, "limit": 15, "search": "", "type": 5, "isSub": 1, "label": 2}
+            }, {
+                'id': 171,
+                'name': '查看新增跟进记录',
+                'api': '/Crm/Instrument/queryRecordConunt',
+                'method': 'POST',
+                'parms': {},
+                'body': {"page": 1, "limit": 15, "search": "", "type": 4, "isSub": 1, "label": 2}
+            }, {
+                'id': 172,
+                'name': '查看逾期未联系客户',
+                'api': '/CrmBackLog/todayCustomer',
+                'method': 'POST',
+                'parms': {},
+                'body': {"page": 1, "limit": 15, "search": "", "type": 2, "isSub": 1, "label": 2}
+            }, {
+                'id': 173,
+                'name': '查看逾期未联系线索',
+                'api': '/CrmBackLog/todayLeads',
+                'method': 'POST',
+                'parms': {},
+                'body': {"page": 1, "limit": 15, "search": "", "type": 2, "isSub": 1, "label": 2}
+            }, {
+                'id': 713,
+                'name': '客户转化阶段漏斗',
+                'api': '/biCustomer/convertcus',
+                'method': 'POST',
+                'parms': {},
+                'body': {"startTime": "2020-06-30 00:00:00", "endTime": "2020-06-30 23:59:59", "creator": "73"},
+                'header': {'Content-Type': 'application/x-www-form-urlencoded'}
+            }, {
+                'id': 714,
+                'name': '新增客户跟进状态漏斗',
+                'api': '/biCustomer/cusfollow',
+                'method': 'POST',
+                'parms': {},
+                'body': {"startTime": "2020-06-30 00:00:00", "endTime": "2020-06-30 23:59:59", "creator": "73"},
+                'header': {'Content-Type': 'application/x-www-form-urlencoded'}
             },
         ]
     },
     {
-        'id':124,
-        'name':'待办事项',
-        'children':[
+        'id': 124,
+        'name': '待办事项',
+        'children': [
             {
-                'id':130,
-                'name':'今日需联系线索',
-                'children':[
+                'id': 130,
+                'name': '今日需联系线索',
+                'children': [
                     {
                         'id': 133,
                         'name': "查看今日需联系线索",
                         'api': "/CrmBackLog/todayLeads",
                         'method': "POST",
                         'parms': "",
-                        'body': {"page":1,"limit":15,"isSub":1,"type":1}
+                        'body': {"page": 1, "limit": 15, "isSub": 1, "type": 1}
                     }
                 ]
             },
             {
-                'id':131,
-                'name':'今日需联系客户',
-                'children':[
+                'id': 131,
+                'name': '今日需联系客户',
+                'children': [
                     {
-                        'id':134,
-                        'name':'查看今日需联系客户',
-                        'api':"/CrmBackLog/todayCustomer",
-                        'method':"POST",
-                        'parms':{},
-                        'body':{"page":1,"limit":15,"isSub":1,"type":2}
+                        'id': 134,
+                        'name': '查看今日需联系客户',
+                        'api': "/CrmBackLog/todayCustomer",
+                        'method': "POST",
+                        'parms': {},
+                        'body': {"page": 1, "limit": 15, "isSub": 1, "type": 2}
                     }
 
                 ]
             },
             {
-                'id':132,
-                'name':'分配给我的线索',
-                'children':[
+                'id': 132,
+                'name': '分配给我的线索',
+                'children': [
                     {
-                        'id':135,
-                        'name':'查看分配给我的线索',
-                        'api':"/CrmBackLog/followLeads",
-                        'method':"POST",
-                        'parms':{},
-                        'body':{"page":1,"limit":15,"isSub":1,"type":2}
+                        'id': 135,
+                        'name': '查看分配给我的线索',
+                        'api': "/CrmBackLog/followLeads",
+                        'method': "POST",
+                        'parms': {},
+                        'body': {"page": 1, "limit": 15, "isSub": 1, "type": 2}
                     }
 
                 ]
-            },{
-                'id':136,
-                'name':'我的客户',
-                'children':[
+            }, {
+                'id': 136,
+                'name': '我的客户',
+                'children': [
                     {
-                        'id':137,
-                        'name':'查看分配给我的客户',
-                        'api':"/CrmBackLog/followCustomer",
-                        'method':"POST",
-                        'parms':{},
-                        'body':{"page":1,"limit":15,"isSub":1,"type":2}
+                        'id': 137,
+                        'name': '查看分配给我的客户',
+                        'api': "/CrmBackLog/followCustomer",
+                        'method': "POST",
+                        'parms': {},
+                        'body': {"page": 1, "limit": 15, "isSub": 1, "type": 2}
                     }
 
                 ]
-            },{
-                'id':174,
-                'name':'查看待进公海客户',
-                'children':[
+            }, {
+                'id': 174,
+                'name': '查看待进公海客户',
+                'children': [
                     {
-                        'id':175,
-                        'name':'查看待进公海客户',
-                        'api':"/CrmBackLog/putInPoolRemind",
-                        'method':"POST",
-                        'parms':{},
-                        'body':{"page":1,"limit":15,"isSub":1,"type":2}
+                        'id': 175,
+                        'name': '查看待进公海客户',
+                        'api': "/CrmBackLog/putInPoolRemind",
+                        'method': "POST",
+                        'parms': {},
+                        'body': {"page": 1, "limit": 15, "isSub": 1, "type": 2}
                     }
 
                 ]
@@ -487,44 +488,44 @@ customer_data = [
         ]
     },
     {
-        'id':125,
-        'name':'线索',
-        'children':[
+        'id': 125,
+        'name': '线索',
+        'children': [
             {
                 'id': 144,
                 'name': "查看线索列表",
                 'api': "/CrmLeads/queryPageList",
                 'method': "POST",
                 'parms': "",
-                'body': {"page":2,"limit":15,"search":"","type":1}
+                'body': {"page": 2, "limit": 15, "search": "", "type": 1}
             }
         ]
     },
     {
-        'id':126,
-        'name':'客户',
-        'children':[
+        'id': 126,
+        'name': '客户',
+        'children': [
             {
                 'id': 145,
                 'name': "查看客户列表",
                 'api': "/CrmCustomer/queryPageList",
                 'method': "POST",
                 'parms': "",
-                'body': {"page":1,"limit":15,"search":"","type":2}
+                'body': {"page": 1, "limit": 15, "search": "", "type": 2}
             }
         ]
     },
     {
-        'id':127,
-        'name':'公海',
-        'children':[
+        'id': 127,
+        'name': '公海',
+        'children': [
             {
                 'id': 146,
                 'name': "查看公海列表",
                 'api': "/CrmCustomer/queryPoolPageList",
                 'method': "POST",
                 'parms': "",
-                'body': {"page":2,"limit":15,"search":"","type":9}
+                'body': {"page": 2, "limit": 15, "search": "", "type": 9}
             },
             {
                 'id': 731,
@@ -532,76 +533,76 @@ customer_data = [
                 'api': "/CrmCustomer/receiveByIds",
                 'method': "POST",
                 'parms': "",
-                'body': {"ids":38},
-                'header':{'Content-Type':'application/x-www-form-urlencoded'}
+                'body': {"ids": 38},
+                'header': {'Content-Type': 'application/x-www-form-urlencoded'}
             }
         ]
     },
     {
-        'id':128,
-        'name':'死海',
-        'children':[
+        'id': 128,
+        'name': '死海',
+        'children': [
             {
                 'id': 147,
                 'name': "查看死海列表",
                 'api': "/CrmCustomer/queryPoolPageList",
                 'method': "POST",
                 'parms': "",
-                'body': {"page":1,"limit":15,"search":"","type":10}
-            },{
+                'body': {"page": 1, "limit": 15, "search": "", "type": 10}
+            }, {
                 'id': 166,
                 'name': "死海客户还原",
                 'api': "/CrmCustomer/updateCustomerFromDeadToPoolByIds",
                 'method': "POST",
                 'parms': "",
-                'body': {"ids":38},
-                'header':{'Content-Type':'application/x-www-form-urlencoded'}
-            },{
+                'body': {"ids": 38},
+                'header': {'Content-Type': 'application/x-www-form-urlencoded'}
+            }, {
                 'id': 730,
                 'name': "死海还原并领取",
                 'api': "/CrmCustomer/receiveByIds",
                 'method': "POST",
                 'parms': "",
                 'body': {'ids': 29},
-                'header':{'Content-Type':'application/x-www-form-urlencoded'}
+                'header': {'Content-Type': 'application/x-www-form-urlencoded'}
             }
         ]
     },
     {
-        'id':129,
-        'name':'客户设置',
-        'children':[
+        'id': 129,
+        'name': '客户设置',
+        'children': [
             {
-                'id':139,
-                'name':'公海管理	',
-                'children':[
+                'id': 139,
+                'name': '公海管理	',
+                'children': [
                     {
-                        'id':142,
-                        'name':"查看客户领取上限",
-                        'api':"/social-api/api/crm/dictionary/reviceLimit",
-                        'method':"GET",
+                        'id': 142,
+                        'name': "查看客户领取上限",
+                        'api': "/social-api/api/crm/dictionary/reviceLimit",
+                        'method': "GET",
                         'parms': {},
                         'body': {}
                     },
                     {
-                        'id':143,
-                        'name':"编辑客户领取上限",
-                        'api':"/social-api/api/crm/dictionary/edit",
-                        'method':"PUT",
+                        'id': 143,
+                        'name': "编辑客户领取上限",
+                        'api': "/social-api/api/crm/dictionary/edit",
+                        'method': "PUT",
                         'parms': {},
-                        'body': {"id":"1","keyName":"client_limt","value":"11111"}
+                        'body': {"id": "1", "keyName": "client_limt", "value": "11111"}
                     }
                 ]
             }
         ]
     },
     {
-        'id':168,
-        'name':'自定义字段设置	',
-        'api':'field/queryFields',
-        'method':'POST',
-        'parms':{},
-        'body':{}
+        'id': 168,
+        'name': '自定义字段设置	',
+        'api': 'field/queryFields',
+        'method': 'POST',
+        'parms': {},
+        'body': {}
     },
 ]
 
@@ -623,4 +624,3 @@ list_test = [
         ]
     }
 ]
-

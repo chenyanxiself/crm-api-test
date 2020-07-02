@@ -11,7 +11,7 @@ class Login:
     def __init__(self,session,user):
         self.uuid=int(time.time())
         self.session=session
-        self.relogin_count = 10
+        self.relogin_count = 1
         self.user:dict=user
     def get_login_session(self):
         for i in range(self.relogin_count):
@@ -27,7 +27,9 @@ class Login:
                 if res_json.get('code') == 0:
                     token = res_json.get('Admin-Token')
                     self.session.headers.setdefault('Admin-Token',token)
+                    print('登录成功')
                     return self.session
+        raise SyntaxError(f'登录失败,超出重试次数')
 
     def get_login_verify_code(self):
         res = self.session.get(url=Config.verify_img_url,params={'uuid':self.uuid}).content
@@ -51,8 +53,9 @@ class Login:
             client = AipOcr(**Config.baidu_config)
             result = client.basicAccurate(processed_img)
             text = '\n'.join([w['words'] for w in result['words_result']]).replace(' ', '')
-        os.remove(init_path)
-        os.remove(processed_path)
+        # os.remove(init_path)
+        # os.remove(processed_path)
+        print(text)
         return text
 
 
