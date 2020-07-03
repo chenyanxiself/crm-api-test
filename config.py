@@ -9,9 +9,9 @@ class Config:
         'password': 'sS123456',
     }
     test_user = {
-        'username': 'apitest',
-        'password': 'Zhiqingchun8888',
-        'role_id':1275678397007192065
+        'username': 'xiaozhao',
+        'password': 'xX123456',
+        'role_id':1275679967639822337
     }
     login_url = 'https://bd2.bd888.online/login'
     verify_img_url = 'http://bd2.bd888.online/getVerifyCode'
