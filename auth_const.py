@@ -736,15 +736,15 @@ system_data = [
                 'id':16,
                 'name':'查看部门列表',
                 'api':'/social-api/sys/sysDepart/queryTreeList?_t=1593587922',
-                'mehtod':'GET',
+                'method':'GET',
                 'params':{},
-                'body':{"_t":"1593587922"}
+                'body':{}
             },
             {
                 'id':17,
                 'name':'创建部门',
                 'api':'/social-api/sys/sysDepart/add',
-                'mehtod':'POST',
+                'method':'POST',
                 'params':{},
                 'body':{"parentId":None,"departName":"test","departOrder":0,"memo":"测试"}
             },
@@ -752,7 +752,7 @@ system_data = [
                 'id':18,
                 'name':'编辑部门',
                 'api':'/social-api/sys/sysDepart/edit',
-                'mehtod':'PUT',
+                'method':'PUT',
                 'params':{},
                 'body':{"address":None,"children":None,"createBy":"陈飞机","createTime":"2020-07-01 15:23:15","delFlag":"0","departName":"test1111","departNameAbbr":None,"departNameEn":None,"departOrder":0,"description":None,"fax":None,"id":"2f3c7d285c0942a1a77b6b89957ad19f","isLeaf":True,"key":"2f3c7d285c0942a1a77b6b89957ad19f","memo":"测试","mobile":None,"orgCategory":"1","orgCode":"A06","orgType":"1","parentId":"","status":None,"title":"test","updateBy":None,"updateTime":None,"value":"2f3c7d285c0942a1a77b6b89957ad19f"}
             },
@@ -760,15 +760,15 @@ system_data = [
                 'id':19,
                 'name':'查看部门详情',
                 'api':'/social-api/sys/sysDepart/queryTreeList?_t=1593588778',
-                'mehtod':'GET',
+                'method':'GET',
                 'params':{},
-                'body':{"_t":"1593588778"}
+                'body':{}
             },
             {
                 'id':20,
                 'name':'删除部门',
                 'api':'/social-api/sys/sysDepart/deleteBatch?ids=2f3c7d285c0942a1a77b6b89957ad19f',
-                'mehtod':'DELETE',
+                'method':'DELETE',
                 'params':{},
                 'body':{"ids":"2f3c7d285c0942a1a77b6b89957ad19f"}
             }
@@ -782,7 +782,7 @@ system_data = [
                 'id':22,
                 'name':'添加已有成员',
                 'api':'/social-api/sys/user/editSysDepartWithUser',
-                'mehtod':'POST',
+                'method':'POST',
                 'params':{},
                 'body':{"depId":"db83e1f4548f4397814ad3a63b94a0d1","userIdList":["74"]}
             },
@@ -790,15 +790,15 @@ system_data = [
                 'id':23,
                 'name':'移除成员',
                 'api':'/social-api/sys/user/deleteUserInDepart?depId=db83e1f4548f4397814ad3a63b94a0d1&userId=74',
-                'mehtod':'DELETE',
+                'method':'DELETE',
                 'params':{},
                 'body':{"depId":"db83e1f4548f4397814ad3a63b94a0d1","userId":"74"}
             },
             {
                 'id':24,
                 'name':'查看部门成员列表',
-                'api':'https://bd2.bd888.online/social-api/sys/user/departUserList',
-                'mehtod':'GET',
+                'api':'/social-api/sys/user/departUserList',
+                'method':'GET',
                 'params':{"_t":"1593589395","column":"createTime","order":"desc","field":"id,,,username,realname,workNo,avatar,undefined,createBy,createTime,action","pageNo":"1","pageSize":"20","depId":"af956d2bad344012812b3df72fb0b989"},
                 'body': {}
             }
@@ -882,7 +882,7 @@ system_data = [
                 "id":10,
                 'name':'编辑成员',
                 'api':'/social-api/sys/user/edit',
-                'mehtod':'PUT',
+                'method':'PUT',
                 'params':{},
                 'body':{"avatar":None,"createTime":"2020-07-01 15:28:56","creator":"72","creatorName":"赵子龙","departIds":None,"email":None,"id":"75","outWeiboIds":"[\"\"]","phone":"","realname":"接口测试","roleIds":[{"id":"1275678397007192065","name":"角色1"}],"sex":None,"status":1,"username":"apitest","workNo":"1234568989","birthday":"","selectedroles":"1275678397007192065","selecteddeparts":""}
             },

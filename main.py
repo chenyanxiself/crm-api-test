@@ -19,8 +19,9 @@ class Main:
         s.headers.setdefault('Admin-Token', 'd6a54dd39f334172b351b98b502cb6d2')
         self.session_admin: requests.Session=s
         t = requests.Session()
-        t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
+        t.headers.setdefault('Admin-Token', 'ba4a92036c4c4767893e35536cd5d535')
         self.session_tester: requests.Session=t
+
     def start(self):
         self.domain(list_test_1,["3", "4", "5", "701", "2"])
 
@@ -37,7 +38,7 @@ class Main:
                     raise SystemError('获取权限列表失败')
                 for j in json.loads(auth_res.text)['result']:
                     if j['selected'] == True:
-                        lastPermissionIds.append(i['id'])
+                        lastPermissionIds.append(j['id'])
                 data = {"roleId":Config.test_user['role_id'],"permissionIds":auth_list,"lastPermissionIds":lastPermissionIds,"objectPermissions":[]}
                 admin_res = self.session_admin.post(url=Config.base_host+'/social-api/sys/permission/saveRolePermissions',json=data)
                 if admin_res.status_code!=200:
@@ -58,7 +59,9 @@ class Main:
                 if res_json['code'] == 403:
                     print(res_json)
                     print(f'权限校验失败,target:有权限,now:无权限. {i}')
-
+                # print(lastPermissionIds)
+                # print('auth_list: ',auth_list)
+                # print('new_auth_list: ',new_auth_list)
     def do_request(self,i):
         args = {
             'method': i['method'],
@@ -81,19 +84,19 @@ class Main:
 
 
 if __name__ == '__main__':
-    Main().start()
-    # t = requests.Session()
-    # t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
-    # args = {
-    #     'method': 'PUT',
-    #     'url': Config.base_host + '/social-api/api/channel/tagCategory/edit',
-    #     'params': {},
-    #     'json': {"id": "1273444722643361794", "name": "test", "children": [
-    #                 {"id": "1274222560149561346", "name": "kevin", "type": 2, "categoryId": "1273444722643361794"},
-    #                 {"id": "1277438167582040065", "name": "1", "type": 2, "categoryId": "1273444722643361794"},
-    #                 {"id": "1277896932286586882", "name": "test", "type": 2, "categoryId": "1273444722643361794"}],
-    #                      "type": 1}
-    # }
-    #
-    # res = t.request(**args)
-    # print(res.text)
+    # Main().start()
+    t = requests.Session()
+    t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
+    args = {
+        'method': 'GET',
+        'url': Config.base_host + '/social-api/api/channel/tagCategory/edit',
+        'params': {},
+        'json': {"id": "1273444722643361794", "name": "test", "children": [
+                    {"id": "1274222560149561346", "name": "kevin", "type": 2, "categoryId": "1273444722643361794"},
+                    {"id": "1277438167582040065", "name": "1", "type": 2, "categoryId": "1273444722643361794"},
+                    {"id": "1277896932286586882", "name": "test", "type": 2, "categoryId": "1273444722643361794"}],
+                         "type": 1}
+    }
+
+    res = t.request(**args)
+    print(res.text)
