@@ -599,7 +599,7 @@ customer_data = [
     {
         'id':168,
         'name':'自定义字段设置	',
-        'api':'field/queryFields',
+        'api':'/field/queryFields',
         'method':'POST',
         'params':{},
         'body':{}
