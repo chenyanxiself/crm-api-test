@@ -598,7 +598,7 @@ customer_data = [
     },
     {
         'id':168,
-        'name':'自定义字段设置	',
+        'name':'自定义字段设置',
         'api':'/field/queryFields',
         'method':'POST',
         'params':{},
@@ -713,7 +713,8 @@ business_data = [
                 "headers":{'content-tyoe': 'application/x-www-form-urlencoded'}
             }
         ]
-    },{
+    },
+    {
         'id':734,
         'name':'自定义报表',
         'children':[{

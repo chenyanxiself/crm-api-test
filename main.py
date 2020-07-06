@@ -16,16 +16,15 @@ class Main:
         # session_tester = requests.Session()
         # self.session_tester: requests.Session = Login(session_tester, Config.test_user).get_login_session()
         self.write_header()
-
         s = requests.Session()
         s.headers.setdefault('Admin-Token', 'd6a54dd39f334172b351b98b502cb6d2')
         s.headers.setdefault('Authorization', 'd6a54dd39f334172b351b98b502cb6d2')
         self.session_admin: requests.Session=s
         t = requests.Session()
         t.headers.setdefault('Admin-Token', 'b5af83b73f964f34b94decfb71b56f35')
-        s.headers.setdefault('Authorization', 'b5af83b73f964f34b94decfb71b56f35')
+        t.headers.setdefault('Authorization', 'b5af83b73f964f34b94decfb71b56f35')
+        print(t.headers)
         self.session_tester: requests.Session=t
-
     def start(self):
         self.domain(list_test_1,["3", "4", "5", "701", "2"])
         self.customer_business(list_test_2, ["3", "4", "5", "701", "2"])
@@ -107,17 +106,17 @@ class Main:
                     raise SystemError('设置权限失败')
                 res_json=self.do_request(i)
 
-                if res_json.get('code',None) != 500:
+                if res_json.get('code',None) not in(500,403):
                     rows = [
                         {'接口名': i['name'], '接口id': i['id'], '接口url': i['api'],
-                         '接口所有内容': str(i), '返回状态码': res_json['code'], '返回内容': res_json, '测试是否通过': False, '期望值':'无权限','实际值':'有权限'}]
+                         '接口所有内容': str(i), '返回状态码': res_json.get('code',None), '返回内容': res_json, '测试是否通过': False, '期望值':'无权限','实际值':'有权限'}]
                     self.write_row(rows)
                     # print(res_json)
                     print(f'权限校验失败,target:无权限,now:有权限. {i}')
                 else:
                     rows = [
                         {'接口名': i['name'], '接口id': i['id'], '接口url': i['api'],
-                         '接口所有内容': str(i), '返回状态码': res_json['code'], '返回内容': res_json, '测试是否通过': True, '期望值': '无权限',
+                         '接口所有内容': str(i), '返回状态码': res_json.get('code',None), '返回内容': res_json, '测试是否通过': True, '期望值': '无权限',
                          '实际值': '无权限'}]
                     self.write_row(rows)
                 new_auth_list = copy.deepcopy(auth_list)
@@ -132,14 +131,14 @@ class Main:
                 if res_json.get('code',None) == 500:
                     rows = [
                         {'接口名': i['name'], '接口id': i['id'], '接口url': i['api'],
-                         '接口所有内容': str(i), '返回状态码': res_json['code'], '返回内容': res_json, '测试是否通过': False, '期望值': '有权限',
+                         '接口所有内容': str(i), '返回状态码': res_json.get('code',None), '返回内容': res_json, '测试是否通过': False, '期望值': '有权限',
                          '实际值': '无权限'}]
                     self.write_row(rows)
                     print(f'权限校验失败,target:有权限,now:无权限. {i}')
                 else:
                     rows = [
                         {'接口名': i['name'], '接口id': i['id'], '接口url': i['api'],
-                         '接口所有内容': str(i), '返回状态码': res_json['code'], '返回内容': res_json, '测试是否通过': True, '期望值': '有权限',
+                         '接口所有内容': str(i), '返回状态码': res_json.get('code',None), '返回内容': res_json, '测试是否通过': True, '期望值': '有权限',
                          '实际值': '有权限'}]
                     self.write_row(rows)
 
@@ -150,15 +149,18 @@ class Main:
             'method': i['method'],
             'url': Config.base_host + i['api'],
             'params': i.get('params',{}),
-            'json': i.get('body',{})
         }
         if i.get('header', None):
             headers: dict = i.get('header')
-            headers.update(self.session_admin.headers)
+            headers.update(self.session_tester.headers)
             args.setdefault('headers', headers)
+        content_type = args.get('headers', {}).get('Content-Type', 'application/json')
+        if content_type != 'application/json':
+            args.setdefault('data', i.get('body',{}))
+        else:
+            args.setdefault('json', i.get('body',{}))
         res = self.session_tester.request(**args)
         try:
-
             res_json = json.loads(res.text)
             return res_json
         except:
@@ -175,8 +177,6 @@ class Main:
 
     def clean(self):
         self.csvs.close()
-
-
 
 
 if __name__ == '__main__':
