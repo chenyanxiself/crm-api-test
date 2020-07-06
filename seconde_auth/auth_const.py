@@ -99,6 +99,15 @@ base_data = [
                                 'method': 'POST',
                                 'params': {},
                                 'body': {"id": "1277424729371762689"},
+                            },
+                            {
+                                'id': 824,
+                                'name': '新建',
+                                'api': '/social-api/api/channel/channel/addAccountGroup',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"channelFlag": 2, "name": "测试", "code": "test",
+                                         "departmentId": ["dfb0f10157274eda9ab3e2e6dc91c9e8"]}
                             }
                         ]
                     },
