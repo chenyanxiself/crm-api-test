@@ -3,10 +3,9 @@
 # @Time    : 2020/6/30 14:24
 # @Author  : yxChen
 
-from login import Login
 import requests,json,copy,time
-from config import Config
-from auth_const import list_test_1,list_test_2
+from seconde_auth.config import Config
+from seconde_auth.auth_const import list_test_1,list_test_2
 import csv
 
 class Main:

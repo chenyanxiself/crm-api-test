@@ -5,7 +5,7 @@
 import time,os,json
 from PIL import Image
 from aip import AipOcr
-from config import Config
+from seconde_auth.config import Config
 
 class Login:
     def __init__(self,session,user):
