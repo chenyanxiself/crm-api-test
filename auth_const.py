@@ -899,8 +899,8 @@ system_data = [
                 "name":'删除成员',
                 'api':'/social-api/sys/user/delete',
                 'method':'DELETE',
-                'params':{},
-                'data':{"id":"76","newPassword":"ZZ123456s"}
+                'params':{"id":"9999"},
+                'data':{}
             },{
                 "id":13,
                 "name":'重置成员密码',
