@@ -5,12 +5,14 @@
 
 import requests, json
 
+
 def get_permission():
     res = requests.get(url='https://socialapidev2.bjx.cloud/social-api/sys/user/queryLoginUserPermissions?_t=1594025976',
                        headers={'admin-token': 'c99b63d1d29c4f7c95c006a50026718f'}).text
     json_res = json.loads(res)
+    print(json_res)
     return json_res
-
+get_permission()
 
 def get_json_data():
     json_res=get_permission()
@@ -83,5 +85,6 @@ def init_field_permission():
     print(res.text)
 
 
+
 # set_field_permission([])
-init_field_permission()
+# init_field_permission()
