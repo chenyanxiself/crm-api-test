@@ -4,31 +4,31 @@ third_data=[
 		"objects": [
 			{
 				"code": "ACCOUNT_GROUP_LIST",
-				"name": "ÕË»§×éÁĞ±í",
+				"name": "è´¦æˆ·ç»„åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "channelCode",
-						"name": "ÕËºÅ×é±àºÅ"
+						"name": "è´¦å·ç»„ç¼–å·"
 					},
 					{
 						"code": "creatorName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "departmentName",
-						"name": "²¿ÃÅÃû³Æ"
+						"name": "éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "departmentId",
-						"name": "²¿ÃÅId"
+						"name": "éƒ¨é—¨Id"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					}
 				]
 			}
@@ -39,31 +39,31 @@ third_data=[
 		"objects": [
 			{
 				"code": "CHANNEL_LIST",
-				"name": "ÇşµÀÁĞ±í",
+				"name": "æ¸ é“åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "channelCode",
-						"name": "ÇşµÀ±àºÅ"
+						"name": "æ¸ é“ç¼–å·"
 					},
 					{
 						"code": "creatorName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "departmentName",
-						"name": "²¿ÃÅÃû³Æ"
+						"name": "éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "departmentId",
-						"name": "²¿ÃÅId"
+						"name": "éƒ¨é—¨Id"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					}
 				]
 			}
@@ -74,89 +74,89 @@ third_data=[
 		"objects": [
 			{
 				"code": "IMPORT_TASK",
-				"name": "µ¼ÈëÈÎÎñĞÅÏ¢",
+				"name": "å¯¼å…¥ä»»åŠ¡ä¿¡æ¯",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "fileName",
-						"name": "µ¼ÈëÎÄ¼şÃû"
+						"name": "å¯¼å…¥æ–‡ä»¶å"
 					},
 					{
 						"code": "fileUrl",
-						"name": "ÏÂÔØÎÄ¼şÂ·¾¶"
+						"name": "ä¸‹è½½æ–‡ä»¶è·¯å¾„"
 					},
 					{
 						"code": "totalCount",
-						"name": "µ¼Èë¼ÇÂ¼Êı"
+						"name": "å¯¼å…¥è®°å½•æ•°"
 					},
 					{
 						"code": "successCount",
-						"name": "³É¹¦µ¼ÈëÊıÁ¿"
+						"name": "æˆåŠŸå¯¼å…¥æ•°é‡"
 					},
 					{
 						"code": "failCount",
-						"name": "µ¼ÈëÊ§°ÜÊıÁ¿"
+						"name": "å¯¼å…¥å¤±è´¥æ•°é‡"
 					},
 					{
 						"code": "waitCount",
-						"name": "´ıµ¼ÈëÊıÁ¿"
+						"name": "å¾…å¯¼å…¥æ•°é‡"
 					},
 					{
 						"code": "status",
-						"name": "×´Ì¬"
+						"name": "çŠ¶æ€"
 					},
 					{
 						"code": "createTime",
-						"name": "µ¼ÈëÊ±¼ä"
+						"name": "å¯¼å…¥æ—¶é—´"
 					},
 					{
 						"code": "departmentName",
-						"name": "µ¼Èë²¿ÃÅ"
+						"name": "å¯¼å…¥éƒ¨é—¨"
 					},
 					{
 						"code": "creatorName",
-						"name": "µ¼ÈëÈË"
+						"name": "å¯¼å…¥äºº"
 					},
 					{
 						"code": "tableName",
-						"name": "µ¼Èë¶ÔÏó±í"
+						"name": "å¯¼å…¥å¯¹è±¡è¡¨"
 					},
 					{
 						"code": "finishMsg",
-						"name": "Íê³ÉĞÅÏ¢"
+						"name": "å®Œæˆä¿¡æ¯"
 					}
 				]
 			},
 			{
 				"code": "IMPORT_TASL_INFO",
-				"name": "µ¼ÈëÈÎÎñÃ÷Ï¸",
+				"name": "å¯¼å…¥ä»»åŠ¡æ˜ç»†",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "content",
-						"name": "µ¼ÈëÄÚÈİ"
+						"name": "å¯¼å…¥å†…å®¹"
 					},
 					{
 						"code": "createTime",
-						"name": "µ¼ÈëÊ±¼ä"
+						"name": "å¯¼å…¥æ—¶é—´"
 					},
 					{
 						"code": "creator",
-						"name": "µ¼ÈëÈË"
+						"name": "å¯¼å…¥äºº"
 					},
 					{
 						"code": "finishMsg",
-						"name": "Íê³ÉĞÅÏ¢"
+						"name": "å®Œæˆä¿¡æ¯"
 					},
 					{
 						"code": "status",
-						"name": "×´Ì¬"
+						"name": "çŠ¶æ€"
 					}
 				]
 			}
@@ -167,11 +167,11 @@ third_data=[
 		"objects": [
 			{
 				"code": "TAG_TREE_LIST",
-				"name": "±êÇ©ÁĞ±í",
+				"name": "æ ‡ç­¾åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					}
 				]
 			}
@@ -182,221 +182,221 @@ third_data=[
 		"objects": [
 			{
 				"code": "CRM_OBJECT_DYNAMIC.1",
-				"name": "ÏßË÷ĞÅÏ¢",
+				"name": "çº¿ç´¢ä¿¡æ¯",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "address",
-						"name": "µØÖ·"
+						"name": "åœ°å€"
 					},
 					{
 						"code": "deptName",
-						"name": "²¿ÃÅÃû³Æ"
+						"name": "éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "leadsName",
-						"name": "ÏßË÷Ãû³Æ"
+						"name": "çº¿ç´¢åç§°"
 					},
 					{
 						"code": "ownerUserName",
-						"name": "¸ºÔğÈË"
+						"name": "è´Ÿè´£äºº"
 					},
 					{
 						"code": "createUserName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "lastFollowupTime",
-						"name": "ÉÏ´Î¸ú½øÊ±¼ä"
+						"name": "ä¸Šæ¬¡è·Ÿè¿›æ—¶é—´"
 					},
 					{
 						"code": "lastContent",
-						"name": "ÉÏ´Î¸ú½øÄÚÈİ"
+						"name": "ä¸Šæ¬¡è·Ÿè¿›å†…å®¹"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					},
 					{
 						"code": "nextTime",
-						"name": "ÏÂ´ÎÁªÏµÊ±¼ä"
+						"name": "ä¸‹æ¬¡è”ç³»æ—¶é—´"
 					},
 					{
 						"code": "telephone",
-						"name": "µç»°"
+						"name": "ç”µè¯"
 					},
 					{
 						"code": "mobile",
-						"name": "ÊÖ»ú"
+						"name": "æ‰‹æœº"
 					},
 					{
-						"code": "ÏßË÷À´Ô´",
-						"name": "ÏßË÷À´Ô´"
+						"code": "çº¿ç´¢æ¥æº",
+						"name": "çº¿ç´¢æ¥æº"
 					},
 					{
-						"code": "¿Í»§¼¶±ğ",
-						"name": "¿Í»§¼¶±ğ"
+						"code": "å®¢æˆ·çº§åˆ«",
+						"name": "å®¢æˆ·çº§åˆ«"
 					},
 					{
 						"code": "remark",
-						"name": "±¸×¢"
+						"name": "å¤‡æ³¨"
 					},
 					{
-						"code": "ÈËÔ±",
-						"name": "ÈËÔ±"
+						"code": "äººå‘˜",
+						"name": "äººå‘˜"
 					},
 					{
-						"code": "µ¥ĞĞÎÄ±¾",
-						"name": "µ¥ĞĞÎÄ±¾"
+						"code": "å•è¡Œæ–‡æœ¬",
+						"name": "å•è¡Œæ–‡æœ¬"
 					},
 					{
 						"code": "dept_id",
-						"name": "²¿ÃÅ"
+						"name": "éƒ¨é—¨"
 					},
 					{
-						"code": "¸½¼ş",
-						"name": "¸½¼ş"
+						"code": "é™„ä»¶",
+						"name": "é™„ä»¶"
 					},
 					{
-						"code": "ÈÕÆÚ",
-						"name": "ÈÕÆÚ"
+						"code": "æ—¥æœŸ",
+						"name": "æ—¥æœŸ"
 					},
 					{
-						"code": "ÈÕÆÚÊ±¼ä",
-						"name": "ÈÕÆÚÊ±¼ä"
+						"code": "æ—¥æœŸæ—¶é—´",
+						"name": "æ—¥æœŸæ—¶é—´"
 					},
 					{
-						"code": "»õ±Ò",
-						"name": "»õ±Ò"
+						"code": "è´§å¸",
+						"name": "è´§å¸"
 					},
 					{
-						"code": "Êı×Ö",
-						"name": "Êı×Ö"
+						"code": "æ•°å­—",
+						"name": "æ•°å­—"
 					},
 					{
-						"code": "¶àÑ¡",
-						"name": "¶àÑ¡"
+						"code": "å¤šé€‰",
+						"name": "å¤šé€‰"
 					},
 					{
-						"code": "ÏÂÀ­¿ò",
-						"name": "ÏÂÀ­¿ò"
+						"code": "ä¸‹æ‹‰æ¡†",
+						"name": "ä¸‹æ‹‰æ¡†"
 					},
 					{
 						"code": "source_dept_id",
-						"name": "À´Ô´²¿ÃÅ"
+						"name": "æ¥æºéƒ¨é—¨"
 					},
 					{
 						"code": "activity_id",
-						"name": "ÓªÏú»î¶¯"
+						"name": "è¥é”€æ´»åŠ¨"
 					}
 				]
 			},
 			{
 				"code": "CRM_OBJECT_DYNAMIC.2",
-				"name": "¿Í»§ĞÅÏ¢",
+				"name": "å®¢æˆ·ä¿¡æ¯",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "address",
-						"name": "µØÖ·"
+						"name": "åœ°å€"
 					},
 					{
 						"code": "deptName",
-						"name": "²¿ÃÅÃû³Æ"
+						"name": "éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "customerName",
-						"name": "¿Í»§Ãû³Æ"
+						"name": "å®¢æˆ·åç§°"
 					},
 					{
 						"code": "ownerUserName",
-						"name": "¸ºÔğÈË"
+						"name": "è´Ÿè´£äºº"
 					},
 					{
 						"code": "createUserName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "lastFollowupTime",
-						"name": "ÉÏ´Î¸ú½øÊ±¼ä"
+						"name": "ä¸Šæ¬¡è·Ÿè¿›æ—¶é—´"
 					},
 					{
 						"code": "lastContent",
-						"name": "ÉÏ´Î¸ú½øÄÚÈİ"
+						"name": "ä¸Šæ¬¡è·Ÿè¿›å†…å®¹"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					},
 					{
 						"code": "nextTime",
-						"name": "ÏÂ´ÎÁªÏµÊ±¼ä"
+						"name": "ä¸‹æ¬¡è”ç³»æ—¶é—´"
 					},
 					{
 						"code": "telephone",
-						"name": "µç»°"
+						"name": "ç”µè¯"
 					},
 					{
 						"code": "mobile",
-						"name": "ÊÖ»ú"
+						"name": "æ‰‹æœº"
 					},
 					{
 						"code": "memberId",
-						"name": "»áÔ±ID"
+						"name": "ä¼šå‘˜ID"
 					},
 					{
 						"code": "memberName",
-						"name": "»áÔ±êÇ³Æ"
+						"name": "ä¼šå‘˜æ˜µç§°"
 					},
 					{
 						"code": "realName",
-						"name": "ÕæÊµĞÕÃû"
+						"name": "çœŸå®å§“å"
 					},
 					{
-						"code": "¿Í»§À´Ô´",
-						"name": "¿Í»§À´Ô´"
+						"code": "å®¢æˆ·æ¥æº",
+						"name": "å®¢æˆ·æ¥æº"
 					},
 					{
-						"code": "¿Í»§¼¶±ğ",
-						"name": "¿Í»§¼¶±ğ"
+						"code": "å®¢æˆ·çº§åˆ«",
+						"name": "å®¢æˆ·çº§åˆ«"
 					},
 					{
 						"code": "remark",
-						"name": "±¸×¢"
+						"name": "å¤‡æ³¨"
 					},
 					{
-						"code": "¶àĞĞÎÄ±¾",
-						"name": "¶àĞĞÎÄ±¾"
+						"code": "å¤šè¡Œæ–‡æœ¬",
+						"name": "å¤šè¡Œæ–‡æœ¬"
 					},
 					{
-						"code": "ÈËÔ±",
-						"name": "ÈËÔ±"
+						"code": "äººå‘˜",
+						"name": "äººå‘˜"
 					},
 					{
-						"code": "¸½¼ş",
-						"name": "¸½¼ş"
+						"code": "é™„ä»¶",
+						"name": "é™„ä»¶"
 					},
 					{
 						"code": "dept_id",
-						"name": "²¿ÃÅ"
+						"name": "éƒ¨é—¨"
 					},
 					{
 						"code": "source_dept_id",
-						"name": "À´Ô´²¿ÃÅ"
+						"name": "æ¥æºéƒ¨é—¨"
 					},
 					{
 						"code": "activity_id",
-						"name": "ÓªÏú»î¶¯"
+						"name": "è¥é”€æ´»åŠ¨"
 					},
 					{
-						"code": "ÈÕÆÚ",
-						"name": "ÈÕÆÚ"
+						"code": "æ—¥æœŸ",
+						"name": "æ—¥æœŸ"
 					}
 				]
 			}
@@ -407,23 +407,23 @@ third_data=[
 		"objects": [
 			{
 				"code": "DEPARTMENT",
-				"name": "²¿ÃÅ",
+				"name": "éƒ¨é—¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "title",
-						"name": "Ê÷¼¶²¿ÃÅÃû³Æ"
+						"name": "æ ‘çº§éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "departName",
-						"name": "²¿ÃÅÃû³Æ"
+						"name": "éƒ¨é—¨åç§°"
 					},
 					{
 						"code": "description",
-						"name": "ÃèÊö"
+						"name": "æè¿°"
 					}
 				]
 			}
@@ -434,11 +434,11 @@ third_data=[
 		"objects": [
 			{
 				"code": "PRODUCT_CONFIG_LIST",
-				"name": "²úÆ·ÁĞ±í",
+				"name": "äº§å“åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					}
 				]
 			}
@@ -449,61 +449,61 @@ third_data=[
 		"objects": [
 			{
 				"code": "ROLE",
-				"name": "½ÇÉ«",
+				"name": "è§’è‰²",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "roleName",
-						"name": "½ÇÉ«Ãû"
+						"name": "è§’è‰²å"
 					},
 					{
 						"code": "roleCode",
-						"name": "½ÇÉ«±àÂë"
+						"name": "è§’è‰²ç¼–ç "
 					},
 					{
 						"code": "departmentId",
-						"name": "ËùÊô²¿ÃÅ"
+						"name": "æ‰€å±éƒ¨é—¨"
 					},
 					{
 						"code": "description",
-						"name": "ÃèÊö"
+						"name": "æè¿°"
 					},
 					{
 						"code": "createBy",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					}
 				]
 			},
 			{
 				"code": "ROLE_LIST",
-				"name": "½ÇÉ«ÁĞ±í",
+				"name": "è§’è‰²åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "roleName",
-						"name": "½ÇÉ«Ãû³Æ"
+						"name": "è§’è‰²åç§°"
 					},
 					{
 						"code": "number",
-						"name": "ÈËÊı"
+						"name": "äººæ•°"
 					},
 					{
 						"code": "creatorName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					}
 				]
 			}
@@ -514,85 +514,85 @@ third_data=[
 		"objects": [
 			{
 				"code": "MEMBER",
-				"name": "³ÉÔ±",
+				"name": "æˆå‘˜",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "username",
-						"name": "ÓÃ»§Ãû"
+						"name": "ç”¨æˆ·å"
 					},
 					{
 						"code": "realname",
-						"name": "ÕæÊµĞÕÃû"
+						"name": "çœŸå®å§“å"
 					},
 					{
 						"code": "avatar",
-						"name": "Í·Ïñ"
+						"name": "å¤´åƒ"
 					},
 					{
 						"code": "email",
-						"name": "ÓÊÏä"
+						"name": "é‚®ç®±"
 					},
 					{
 						"code": "phone",
-						"name": "µç»°"
+						"name": "ç”µè¯"
 					},
 					{
 						"code": "status",
-						"name": "×´Ì¬"
+						"name": "çŠ¶æ€"
 					}
 				]
 			},
 			{
 				"code": "MEMBER_LIST",
-				"name": "³ÉÔ±ÁĞ±í",
+				"name": "æˆå‘˜åˆ—è¡¨",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "username",
-						"name": "ÓÃ»§Ãû"
+						"name": "ç”¨æˆ·å"
 					},
 					{
 						"code": "realname",
-						"name": "ÕæÊµĞÕÃû"
+						"name": "çœŸå®å§“å"
 					},
 					{
 						"code": "avatar",
-						"name": "Í·Ïñ"
+						"name": "å¤´åƒ"
 					},
 					{
 						"code": "workNo",
-						"name": "¹¤ºÅ"
+						"name": "å·¥å·"
 					},
 					{
 						"code": "status",
-						"name": "×´Ì¬"
+						"name": "çŠ¶æ€"
 					},
 					{
 						"code": "departIds",
-						"name": "²¿ÃÅ"
+						"name": "éƒ¨é—¨"
 					},
 					{
 						"code": "roleIds",
-						"name": "½ÇÉ«"
+						"name": "è§’è‰²"
 					},
 					{
 						"code": "outWeiboIds",
-						"name": "Íâ²¿Î¢²©id"
+						"name": "å¤–éƒ¨å¾®åšid"
 					},
 					{
 						"code": "creatorName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "createTime",
-						"name": "´´½¨Ê±¼ä"
+						"name": "åˆ›å»ºæ—¶é—´"
 					}
 				]
 			}
@@ -603,19 +603,19 @@ third_data=[
 		"objects": [
 			{
 				"code": "OPERATION_LOG_LIST",
-				"name": "ºóÌ¨ÈÕÖ¾",
+				"name": "åå°æ—¥å¿—",
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
-						"name": "ÏÔÊ¾Ãô¸ĞĞÅÏ¢"
+						"name": "æ˜¾ç¤ºæ•æ„Ÿä¿¡æ¯"
 					},
 					{
 						"code": "createName",
-						"name": "´´½¨ÈË"
+						"name": "åˆ›å»ºäºº"
 					},
 					{
 						"code": "content",
-						"name": "²Ù×÷ÄÚÈİ"
+						"name": "æ“ä½œå†…å®¹"
 					}
 				]
 			}
