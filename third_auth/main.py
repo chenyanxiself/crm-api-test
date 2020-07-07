@@ -35,17 +35,22 @@ class Main:
         for data in third_data:
             for object in data['objects']:
                 for field in object['fields']:
-                    print(f'权限id:{data["permissionId"]}  对象名:{object["name"]}  字段:{field["code"]}  字段名:{field["name"]}')
+                    print(f'{"-"*5}权限id:{data["permissionId"]}  对象名:{object["name"]}  字段:{field["code"]}  字段名:{field["name"]}{"-"*5}')
                     self.init_field_permission()
                     no_permission_response = self.do_request(object)
                     print('无权限结果'+json.dumps(no_permission_response))
+
                     self.set_field_permission(data['permissionId'],[field['code']])
                     if self.verify_user_login_permission(data['permissionId'],object['code'],field['code']):
                         print('userLoginPermission权限设置成功')
                         get_permission_response = self.do_request(object)
                         print('有权限结果'+json.dumps(get_permission_response))
+
                     else:
                         print('userLoginPermission权限设置失败')
+                    print(f'{"-"*100}')
+
+
     def verify_user_login_permission(self,permission_id,object_code,field_code):
         json_res = self.get_permission()
         for data in json_res['result']:
