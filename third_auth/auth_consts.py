@@ -5,6 +5,10 @@ third_data=[
 			{
 				"code": "ACCOUNT_GROUP_LIST",
 				"name": "账户组列表",
+				"api":"/social-api/api/channel/channel/queryAccountGroup",
+				"method":"POST",
+				"params":{},
+				"json":{"channelFlag":2,"column":"createTime","order":"desc","field":"id,,channelCode,channelName,creatorName,createTime,status,departmentName,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -40,6 +44,10 @@ third_data=[
 			{
 				"code": "CHANNEL_LIST",
 				"name": "渠道列表",
+				"api":"/social-api/api/channel/channel/queryChannelAccount",
+				"method":"POST",
+				"params":{},
+				"json":{"channelFlag":1,"column":"createTime","order":"desc","field":"id,,channelCode,channelName,creatorName,createTime,status,departmentName,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -75,6 +83,10 @@ third_data=[
 			{
 				"code": "IMPORT_TASK",
 				"name": "导入任务信息",
+				"api":"/social-api/api/crm/importTask/select",
+				"method":"POST",
+				"params":{},
+				"json":{"importObjectId":"0","channelId":"0","column":"createTime","order":"desc","field":"id,,,fileName,totalCount,undefined,undefined,finishMsg,departmentName,creatorName,tableName,createTime,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -133,6 +145,10 @@ third_data=[
 			{
 				"code": "IMPORT_TASL_INFO",
 				"name": "导入任务明细",
+				"api":"/social-api/api/crm/importTaskInfo/list",
+				"method":"POST",
+				"params":{},
+				"json":{"column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20,"importTaskId":"1277523065906978817","importObjectId":"1277521819573739521"},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -168,6 +184,10 @@ third_data=[
 			{
 				"code": "TAG_TREE_LIST",
 				"name": "标签列表",
+				"api":"/social-api/api/channel/tagCategory/tree",
+				"method":"POST",
+				"params":{},
+				"json":{},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -183,6 +203,10 @@ third_data=[
 			{
 				"code": "CRM_OBJECT_DYNAMIC.1",
 				"name": "线索信息",
+				"api":"/CrmLeads/queryPageList",
+				"method":"POST",
+				"params":{},
+				"json":{"page":1,"limit":15,"search":"","type":1},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -297,6 +321,10 @@ third_data=[
 			{
 				"code": "CRM_OBJECT_DYNAMIC.2",
 				"name": "客户信息",
+				"api":"/CrmCustomer/queryPageList",
+				"method":"POST",
+				"params":{},
+				"json":{"page":1,"limit":15,"search":"","type":2},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -408,6 +436,10 @@ third_data=[
 			{
 				"code": "DEPARTMENT",
 				"name": "部门",
+				"api":"/social-api/sys/sysDepart/queryTreeList",
+				"method":"GET",
+				"params":{"_t":1594090623},
+				"json":{},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -435,6 +467,10 @@ third_data=[
 			{
 				"code": "PRODUCT_CONFIG_LIST",
 				"name": "产品列表",
+				"api":"/social-api/api/channel/product/list",
+				"method":"POST",
+				"params":{},
+				"json":{"column":"createTime","order":"desc","field":"id,,,name,creatorName,createTime,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -450,6 +486,10 @@ third_data=[
 			{
 				"code": "ROLE",
 				"name": "角色",
+				"api":"/social-api/sys/role/list",
+				"method":"POST",
+				"params": {},
+				"json":{"departmentId":"1266e415a61f4937b0e77c25b511e72f","column":"createTime","order":"desc","field":"id,,,roleName,number,creatorName,departmentName,typeName,createTime,sort,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -484,6 +524,10 @@ third_data=[
 			{
 				"code": "ROLE_LIST",
 				"name": "角色列表",
+				"api":"/social-api/sys/sysDepart/queryTreeWithCountList",
+				"method":"GET",
+				"params":{"_t":"1594090940"},
+				"json":{},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -515,6 +559,10 @@ third_data=[
 			{
 				"code": "MEMBER",
 				"name": "成员",
+				"api":"/social-api/sys/user/list",
+				"method":"GET",
+				"params":{},
+				"json":{"_t":1594090986,"column":"createTime","order":"desc","field":"id,,,realname,workNo,avatar,undefined,undefined,undefined,creatorName,createTime,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -549,6 +597,10 @@ third_data=[
 			{
 				"code": "MEMBER_LIST",
 				"name": "成员列表",
+				"api":"/social-api/sys/user/list",
+				"method":"GET",
+				"params":{},
+				"json":{"_t":1594090986,"column":"createTime","order":"desc","field":"id,,,realname,workNo,avatar,undefined,undefined,undefined,creatorName,createTime,action","pageNo":1,"pageSize":20},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
@@ -604,6 +656,10 @@ third_data=[
 			{
 				"code": "OPERATION_LOG_LIST",
 				"name": "后台日志",
+				"api":"/social-api/api/crm/operLog/list/selection",
+				"method":"POST",
+				"params":{},
+				"json":{"pageNo":1,"pageSize":20,"expression":[]},
 				"fields": [
 					{
 						"code": "showSensitiveInfo",
