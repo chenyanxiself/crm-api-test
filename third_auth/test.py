@@ -84,4 +84,6 @@ def init_field_permission():
 
 
 # set_field_permission([])
-init_field_permission()
+# init_field_permission()
+
+print(isinstance([1,3,4],str))

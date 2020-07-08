@@ -627,7 +627,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year'},
-                "headers": {'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers": {'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -641,7 +641,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year'},
-                "headers": {'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers": {'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -654,7 +654,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year'},
-                "headers": {'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers": {'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -667,7 +667,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year'},
-                "headers": {'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers": {'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -680,7 +680,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year'},
-                "headers": {'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers": {'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -706,7 +706,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','userId':'','type':'year','type_analyse':'level'},
-                "headers":{'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers":{'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },{
@@ -719,7 +719,7 @@ business_data = [
                 "method":"POST",
                 "params":{},
                 "body":{'deptId':'0380db65f79c422a948f8b2fafd2bc0c','type':'year'},
-                "headers":{'content-tyoe': 'application/x-www-form-urlencoded'}
+                "headers":{'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
     },

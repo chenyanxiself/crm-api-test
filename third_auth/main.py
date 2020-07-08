@@ -16,19 +16,18 @@ import csv
 
 class Main:
     def __init__(self):
-        # self.write_header()
-
+        self.write_header()
         s = requests.Session()
-        s.headers.setdefault('Admin-Token', 'e8c00785477e436788659029100badee')
-        s.headers.setdefault('Authorization', 'e8c00785477e436788659029100badee')
+        s.headers.setdefault('Admin-Token', '8f38b2df50fa45b9a328889601a11873')
+        s.headers.setdefault('Authorization', '8f38b2df50fa45b9a328889601a11873')
         self.session_admin: requests.Session=s
         t = requests.Session()
-        t.headers.setdefault('Admin-Token', 'c99b63d1d29c4f7c95c006a50026718f')
-        t.headers.setdefault('Authorization', 'c99b63d1d29c4f7c95c006a50026718f')
+        t.headers.setdefault('Admin-Token', '0e56e625f1d54902bfa465bf2c2d2bd7')
+        t.headers.setdefault('Authorization', '0e56e625f1d54902bfa465bf2c2d2bd7')
         self.session_tester: requests.Session=t
     def start(self):
         self.domain()
-        # self.clean()
+        self.clean()
 
     def domain(self):
         #init
@@ -39,13 +38,56 @@ class Main:
                     self.init_field_permission()
                     no_permission_response = self.do_request(object)
                     print('无权限结果'+json.dumps(no_permission_response))
+                    if no_permission_response['code'] not in (0,200):
+                        rows = [{'字段名': field["name"], '字段ID': field["code"], '父级权限ID': data["permissionId"],'接口url': object['api'], '接口所有内容': data, '返回状态码': no_permission_response['code'],'返回内容': no_permission_response, '测试是否通过': False, '期望值': False, '实际值': False}]
+                        self.write_row(rows)
+                    else:
+                        parameter = self.regExp_response(object, no_permission_response)
+                        no_permission_flag = True
+                        if isinstance(parameter,list):
+                            for no_permission in parameter:
+                                if no_permission.get(field["code"], None) not in ("", None):
+                                    no_permission_flag = False
+                        else:
+                            if parameter.get(field["code"], None) not in ("", None):
+                                no_permission_flag = False
+                        if no_permission_flag:
+                            rows = [{'字段名': field["name"], '字段ID': field["code"], '父级权限ID': data["permissionId"],
+                                     '接口url': object['api'], '接口所有内容': data, '返回状态码': no_permission_response['code'],
+                                     '返回内容': no_permission_response, '测试是否通过': True, '期望值': False, '实际值': False}]
+                            self.write_row(rows)
+                        else:
+                            print(f"权限校验失败,target：无权限，now：有权限.{field['name']}")
+                            rows = [{'字段名': field["name"], '字段ID': field["code"], '父级权限ID': data["permissionId"],
+                                     '接口url': object['api'], '接口所有内容': data, '返回状态码': no_permission_response['code'],
+                                     '返回内容': no_permission_response, '测试是否通过': False, '期望值': False, '实际值': True}]
+                            self.write_row(rows)
 
+                    # assert no_permission_response['result']['records'][0].get(field["code"],None) in ("",None)
                     self.set_field_permission(data['permissionId'],[field['code']])
                     if self.verify_user_login_permission(data['permissionId'],object['code'],field['code']):
                         print('userLoginPermission权限设置成功')
                         get_permission_response = self.do_request(object)
                         print('有权限结果'+json.dumps(get_permission_response))
-
+                        if get_permission_response['code'] not in (0,200):
+                            rows = [{'字段名': field["name"],'字段ID':field["code"],'父级权限ID': data["permissionId"], '接口url': object['api'], '接口所有内容': data,'返回状态码': get_permission_response['code'], '返回内容': get_permission_response,'测试是否通过': False, '期望值': True, '实际值': False}]
+                            self.write_row(rows)
+                        else:
+                            get_permission_flag = False
+                            parameter = self.regExp_response(object, get_permission_response)
+                            if isinstance(parameter,list):
+                                for get_permission in parameter:
+                                    if get_permission.get(field["code"], None) not in ("", None):
+                                        get_permission_flag = True
+                            else:
+                                if parameter.get(field["code"], None) not in ("", None):
+                                    get_permission_flag = True
+                            if get_permission_flag:
+                                rows = [{'字段名': field["name"],'字段ID':field["code"],'父级权限ID': data["permissionId"], '接口url': object['api'],'接口所有内容': data, '返回状态码': get_permission_response['code'],'返回内容': get_permission_response, '测试是否通过': True, '期望值': True,'实际值': True}]
+                                self.write_row(rows)
+                            else:
+                                rows = [{'字段名': field["name"],'字段ID':field["code"],'父级权限ID': data["permissionId"], '接口url': object['api'],'接口所有内容': data, '返回状态码': get_permission_response['code'],'返回内容': get_permission_response, '测试是否通过': False, '期望值': True,'实际值': False}]
+                                self.write_row(rows)
                     else:
                         print('userLoginPermission权限设置失败')
                     print(f'{"-"*100}')
@@ -60,8 +102,14 @@ class Main:
                         for field in object['fields']:
                             if field['code']==field_code:
                                 return field['selected']
-
-
+    def regExp_response(self,object,response:dict):
+        key_list = object['regExp_response'].split('.')
+        return_value=response
+        for key in key_list:
+            return_value = return_value.get(key, None)
+            if return_value == None:
+                break
+        return return_value
     def get_permission(self):
         res = self.session_tester.get(
             url=Config.base_host+'/social-api/sys/user/queryLoginUserPermissions?_t=1594025976').text
@@ -111,7 +159,7 @@ class Main:
                 objectPermissions.append(item)
                 break
         json_data = {
-            "roleId": "1280045317227601921",
+            "roleId": "1280045425381924866",
             "permissionIds": Config.second_permission_ids,
             "lastPermissionIds": lastPermissionIds,
             "objectPermissions": objectPermissions
@@ -140,7 +188,7 @@ class Main:
 
     def write_header(self):
         self.csvs = open(f'{str(int(time.time()))}.csv','w',newline='')
-        headers: list = ['接口名', '接口id', '接口url', '接口所有内容', '返回状态码', '返回内容', '测试是否通过', '期望值', '实际值']
+        headers: list = ['字段名','字段ID', '父级权限ID', '接口url', '接口所有内容', '返回状态码', '返回内容', '测试是否通过', '期望值', '实际值']
         self.writes = csv.DictWriter(self.csvs, headers)
         self.writes.writeheader()
 

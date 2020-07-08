@@ -153,7 +153,7 @@ class Main:
             headers: dict = i.get('header')
             headers.update(self.session_tester.headers)
             args.setdefault('headers', headers)
-        content_type = args.get('headers', {}).get('Content-Type', 'application/json')
+        content_type = args.get('headers', {}).get('content-type', 'application/json')
         if content_type != 'application/json':
             args.setdefault('data', i.get('body',{}))
         else:
