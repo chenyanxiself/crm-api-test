@@ -370,8 +370,230 @@ base_data = [
                         'name':'员工数据',
                         'children':[
                             {
-                                'id':'',
+                                'id':1281492187913183233,
+                                'name':'查看列表数据',
+                                'api':'/social-api/api/channel/channelTableProperty/performanceDatalist',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"tableId":"1281492187724439553","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20}
+                            },
+                            # {
+                            #     'id':1281492187950931970,
+                            #     'name':'导入数据',
+                            #     'api':'',
+                            #     'method':'',
+                            #     'params':{},
+                            #     'body':{}
+                            # },
+                            {
+                                'id':1281492187992875010,
+                                'name':'新建数据',
+                                'api':'/social-api/api/channel/channelTableValue/add',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"tableId":"1281492187724439553","importInfo":{"date":"2020-07-07","department":"7a6cd4f3660b465f9ae1d6c3742ac633","department_member":"191","effective_call":-1,"registrations":1,"first_deposit":1,"number_of_depositors":1,"amount_of_deposits":-1,"cash_withdrawal":-1,"sadas":"bd3e24d13b774318b73145a432ca6679","asaa":-1,"dsfasf":-2,"sdad":"1","sdfaf":"1@QQ.COM","fsdfs":-1,"sjik":-1,"fsfs":"2","gdgd":"1","daa":"1","sdsadas":"1","re":1,"id":""}}
+                            },{
+                                'id':1281492188030623746,
+                                'name':'编辑列表数据',
+                                'api':'/social-api/api/channel/channelTableValue/edit',
+                                'method':'PUT',
+                                'params':{},
+                                'body':{"tableId":"1281492187724439553","id":"1282920529954660353","importInfo":{"date":"2020-07-07","sdad":"1","sdsadas":"1","daa":"1","gdgd":"1","sadas":"bd3e24d13b774318b73145a432ca6679","sjik":-1,"import_flag":3,"first_deposit":1,"amount_of_deposits":-1,"number_of_depositors":1,"fsdfs":-1,"sdfaf":"1@QQ.COM","id":"","department":"7a6cd4f3660b465f9ae1d6c3742ac633","registrations":1,"department_member":"191","create_time":"2020-07-14 14:11:05","cash_withdrawal":-1,"fsfs":"产品1","effective_call":-1,"re":1,"dsfasf":-2,"asaa":-1}}
+                            },{
+                                'id':1281492188072566786,
+                                'name':'删除',
+                                'api':'/social-api/api/channel/channelTableValue/delete/1282920529954660353',
+                                'method':'DELETE',
+                                'params':{},
+                                'body':{}
+                            },{
+                                'id':1281492188110315522,
+                                'name':'下载导入模板',
+                                'api':'/social-api/api/crm/importObject/download/byTableId',
+                                'method':'GET',
+                                'params':{"_t":"1594707148","tableId":"1281492187724439553"},
+                                'body':{},
+                            },{
+                                'id':1281492188148064257,
+                                'name':'编辑数据模板',
+                                'api':'/social-api/api/channel/table/add',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"tableComment":"电服部","tableName":"电服部","tableId":"1281492187724439553","tableField":[{"fieldType":1,"fieldComment":"","fieldDefaultValue":"","fieldKey":"id","fieldName":"id","fieldSensitiveFlag":1,"fieldSensitiveStrategy":"CHANNELID","options":[],"fieldIsKey":1,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":18,"fieldComment":"","fieldDefaultValue":"","fieldKey":"date","fieldName":"日期","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":52,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department","fieldName":"部门","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":53,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department_member","fieldName":"成员","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"effective_call","fieldName":"有效通话","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"registrations","fieldName":"注册","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"first_deposit","fieldName":"首存","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"number_of_depositors","fieldName":"存款人数","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"amount_of_deposits","fieldName":"存款量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"cash_withdrawal","fieldName":"取现量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":50,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sadas","fieldName":"部门123213123","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"asaa","fieldName":"测试数字","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"dsfasf","fieldName":"数字","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":9,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sdad","fieldName":"qq","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":4,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sdfaf","fieldName":"邮箱","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"fsdfs","fieldName":"数字11","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sjik","fieldName":"数字1234","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":5,"fieldComment":"","fieldDefaultValue":"","fieldKey":"fsfs","fieldName":"下拉框","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[{"name":"产品1","value":"2"},{"name":"产品2","value":"1"}],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":1,"fieldComment":"","fieldDefaultValue":"","fieldKey":"gdgd","fieldName":"单行文本","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":2,"fieldComment":"","fieldDefaultValue":"","fieldKey":"daa","fieldName":"手机测试","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":9,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sdsadas","fieldName":"qq111111","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"dsfs","fieldName":"报表数字","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":2,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"dasd","fieldName":"数字22222","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":2,"defaultFlag":2,"fieldGroupId":"","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"re","fieldName":"报表1","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":2,"fieldGroupId":"","reportFlag":1}]}
                             }
+                        ]
+                    },
+                    {
+                        'id':1281492188190007297,
+                        'name':'部门汇总',
+                        'children':[
+                            {
+                                'id':1281492188227756033,
+                                'name':'查看列表数据',
+                                'api':'/social-api/api/channel/channelTableProperty/deptSumarize',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"id":"1281492187724439553"}
+                            }
+
+                        ]
+                    }
+                ]
+            },
+            {
+                'id':1281492211007021058,
+                'name':'代理部',
+                'children':[
+                    {
+                        'id':1281492211095101442,
+                        'name':'员工数据',
+                        'children':[
+                            {
+                                'id': 1281492211132850177,
+                                'name': '查看列表数据',
+                                'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"tableId":"1281492210956689410","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20}
+                            },
+                            # {
+                            #     'id': 1281492211174793218,
+                            #     'name': '导入数据',
+                            #     'api': '',
+                            #     'method': '',
+                            #     'params': {},
+                            #     'body': {}
+                            # },
+                            {
+                                'id': 1281492211208347650,
+                                'name': '新建数据',
+                                'api': '/social-api/api/channel/channelTableValue/add',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"tableId":"1281492210956689410","importInfo":{"date":"2020-07-14","department":"7a6cd4f3660b465f9ae1d6c3742ac633","department_member":"191","reception":1,"conversion_agent":1,"effective_agency":1,"amount_of_deposits":1,"cash_withdrawal":1}}
+                            }, {
+                                'id': 1281492211246096385,
+                                'name': '编辑列表数据',
+                                'api': '/social-api/api/channel/channelTableValue/edit',
+                                'method': 'PUT',
+                                'params': {},
+                                'body': {"tableId":"1281492210956689410","id":"1282921933163257858","importInfo":{"date":"2020-07-14","amount_of_deposits":1,"conversion_agent":1,"effective_agency":1,"department_member":"191","create_time":"2020-07-14 14:16:39","cash_withdrawal":1,"id":"","reception":1,"department":"7a6cd4f3660b465f9ae1d6c3742ac633","import_flag":3}}
+                            }, {
+                                'id': 1281492211283845122,
+                                'name': '删除',
+                                'api': '/social-api/api/channel/channelTableValue/delete/1282921933163257858',
+                                'method': 'DELETE',
+                                'params': {},
+                                'body': {}
+                            }, {
+                                'id': 1281492211321593858,
+                                'name': '下载导入模板',
+                                'api': '/social-api/api/crm/importObject/download/byTableId',
+                                'method': 'GET',
+                                'params': {"_t":"1594707485","tableId":"1281492210956689410"},
+                                'body': {}
+                            }, {
+                                'id': 1281492211359342593,
+                                'name': '编辑数据模板',
+                                'api': '/social-api/api/channel/table/add',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"tableComment":"代理部","tableName":"代理部","tableId":"1281492210956689410","tableField":[{"fieldType":1,"fieldComment":"","fieldDefaultValue":"","fieldKey":"id","fieldName":"id","fieldSensitiveFlag":1,"fieldSensitiveStrategy":"CHANNELID","options":[],"fieldIsKey":1,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":18,"fieldComment":"","fieldDefaultValue":"","fieldKey":"date","fieldName":"日期","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":52,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department","fieldName":"部门","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":53,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department_member","fieldName":"成员","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"reception","fieldName":"接待量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"conversion_agent","fieldName":"转化代理","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"effective_agency","fieldName":"有效代理","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"amount_of_deposits","fieldName":"存款量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"cash_withdrawal","fieldName":"取现量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"sdfasf","fieldName":"数字","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":2,"defaultFlag":2,"fieldGroupId":"","reportFlag":2}]}
+                            }
+                        ]
+                    },
+                    {
+                        'id':1281492211401285634,
+                        'name':'部门汇总',
+                        'children':[
+                            {
+                                'id':1281492211451617281,
+                                'name':'查看列表数据',
+                                'api':'/social-api/api/channel/channelTableProperty/deptSumarize',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"id":"1281492210956689410"}
+                            }
+
+                        ]
+                    }
+                ]
+            },
+            {
+                'id':1281492236445474817,
+                'name':'市场部',
+                'children':[
+                    {
+                        'id':1281492236541943809,
+                        'name':'员工数据',
+                        'children':[
+                            {
+                                'id': 1281492236579692545,
+                                'name': '查看列表数据',
+                                'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"tableId":"1281492236403531778","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20}
+                            },
+                            # {
+                            #     'id': 1281492236617441282,
+                            #     'name': '导入数据',
+                            #     'api': '',
+                            #     'method': '',
+                            #     'params': {},
+                            #     'body': {}
+                            # },
+                            {
+                                'id': 1281492236659384322,
+                                'name': '新建数据',
+                                'api': '/social-api/api/channel/channelTableValue/add',
+                                'method': 'POST',
+                                'params': {},
+                                'body': {"tableId":"1281492236403531778","importInfo":{"date":"2020-07-14","department":"1266e415a61f4937b0e77c25b511e72f","department_member":"191","registrations":"1","first_deposit":"1","number_of_depositors":"1","amount_of_deposits":1,"cash_withdrawal":1}}
+                            }, {
+                                'id': 1281492236701327361,
+                                'name': '编辑列表数据',
+                                'api': '/social-api/api/channel/channelTableValue/edit',
+                                'method': 'PUT',
+                                'params': {},
+                                'body': {"tableId":"1281492236403531778","id":"1282923137352130562","importInfo":{"date":"2020-07-14","first_deposit":1,"amount_of_deposits":1,"number_of_depositors":1,"registrations":1,"department_member":"191","create_time":"2020-07-14 14:21:26","cash_withdrawal":1,"id":"","department":"1266e415a61f4937b0e77c25b511e72f","import_flag":3}}
+                            }, {
+                                'id': 1281492236743270401,
+                                'name': '删除',
+                                'api': '/social-api/api/channel/channelTableValue/delete/1282923137352130562    ',
+                                'method': 'DELETE',
+                                'params': {},
+                                'body': {}
+                            }, {
+                                'id': 1281492236785213441,
+                                'name': '下载导入模板',
+                                'api': '/social-api/api/crm/importObject/download/byTableId',
+                                'method': 'GET',
+                                'params': {"_t":"1594707768","tableId":"1281492236403531778"},
+                                'body': {}
+                            }, {
+                                'id': 1281492236835545090,
+                                'name': '编辑数据模板',
+                                'api': '/social-api/api/channel/table/add',
+                                'method': 'POST',
+                                'params': {},
+                                'body':{"tableComment":"市场部","tableName":"市场部","tableId":"1281492236403531778","tableField":[{"fieldType":1,"fieldComment":"","fieldDefaultValue":"","fieldKey":"id","fieldName":"id","fieldSensitiveFlag":1,"fieldSensitiveStrategy":"CHANNELID","options":[],"fieldIsKey":1,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":18,"fieldComment":"","fieldDefaultValue":"","fieldKey":"date","fieldName":"日期","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":2},{"fieldType":52,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department","fieldName":"部门","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":53,"fieldComment":"","fieldDefaultValue":"","fieldKey":"department_member","fieldName":"成员","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":1,"status":1,"defaultFlag":1,"fieldGroupId":"3","reportFlag":2},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"registrations","fieldName":"注册","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"first_deposit","fieldName":"首存","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"number_of_depositors","fieldName":"存款人数","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"amount_of_deposits","fieldName":"存款量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1},{"fieldType":8,"fieldComment":"","fieldDefaultValue":"","fieldKey":"cash_withdrawal","fieldName":"取现量","fieldSensitiveFlag":2,"fieldSensitiveStrategy":"","options":[],"fieldIsKey":2,"fieldIsVaild":2,"status":1,"defaultFlag":1,"fieldGroupId":"","reportFlag":1}]}
+                            }
+                        ]
+                    },
+                    {
+                        'id':1281492236881682434,
+                        'name':'部门汇总',
+                        'children':[
+                            {
+                                'id':1281492236919431170,
+                                'name':'查看列表数据',
+                                'api':'/social-api/api/channel/channelTableProperty/deptSumarize',
+                                'method':'POST',
+                                'params':{},
+                                'body':{"id":"1281492236403531778"}
+                            }
+
                         ]
                     }
                 ]
@@ -730,7 +952,8 @@ business_data = [
                 "headers":{'content-type': 'application/x-www-form-urlencoded'}
             }
         ]
-    },{
+    },
+    {
         'id':210,
         'name':'新增客户排行榜',
         'children':[{
@@ -745,18 +968,84 @@ business_data = [
         ]
     },
     {
-        'id':734,
-        'name':'自定义报表',
-        'children':[{
-                'id':732,
-                'name':"自定义报表",
-                "api":"/davinci-api/api/v3/dashboardPortals",
-                "method":"POST",
-                "params":{},
-                "body":{"description":"","name":"test","publish":True,"roleIds":[],"avatar":"10","projectId":1}
+        'id':1281492187825102849,
+        'name':'电服部',
+        'children':[
+            {
+                'id':1281492188265504769,
+                'name':'查看折线图与柱状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatistics',
+                'method':'POST',
+                'params':{},
+                'body':{"departIds":["06ea1bcd35da481086c330410d4921f5","af956d2bad344012812b3df72fb0b989","af956d2bad344012812b3df72fb0b989"],"userIds":["75","86","86"],"startTime":"2020-07-07","endTime":"2020-07-14","fieldIds":["1281492188529745922","1281492188567494657","1281492188609437697","1281492188642992130","1281492188680740866","1281492188718489602","1281585971426549761"],"tableId":"1281492187724439553"}
+            },
+            {
+                'id':1281492188303253506,
+                'name':'查看饼状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatisticsPie',
+                'method':'POST  ',
+                'params':{},
+                'body':{"startTime":"2020-07-07","endTime":"2020-07-14","fieldIds":["1281492188529745922","1281492188567494657","1281492188609437697","1281492188642992130","1281492188680740866","1281492188718489602","1281585971426549761"],"tableId":"1281492187724439553"}
+            }
+        ]
+    },
+    {
+        'id':1281492211057352706,
+        'name':'代理部',
+        'children':[
+            {
+                'id':1281492211489366018,
+                'name':'查看折线图与柱状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatistics',
+                'method':'POST',
+                'params':{},
+                'body':{"departIds":["af956d2bad344012812b3df72fb0b989"],"userIds":["86"],"startTime":"2020-07-07","endTime":"2020-07-14","fieldIds":["1281492211736829954","1281492211774578689","1281492211812327426","1281492211845881858","1281492211879436289"],"tableId":"1281492210956689410"}
+            },
+            {
+                'id':1281492211527114753,
+                'name':'查看饼状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatisticsPie',
+                'method':'POST',
+                'params':{},
+                'body':{"tableId":"1281492210956689410","fieldIds":["1281492211736829954","1281492211774578689","1281492211812327426","1281492211845881858","1281492211879436289"],"startTime":"2020-07-07","endTime":"2020-07-14"}
+            }
+        ]
+    },
+    {
+        'id':1281492236483223553,
+        'name':'市场部',
+        'children':[
+            {
+                'id':1281492236961374210,
+                'name':'查看折线图与柱状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatistics',
+                'method':'POST',
+                'params':{},
+                'body':{"departIds":["af956d2bad344012812b3df72fb0b989"],"userIds":["86"],"startTime":"2020-07-07","endTime":"2020-07-14","fieldIds":["1281492237263364098","1281492237301112834","1281492237338861570","1281492237372416001","1281492237418553345"],"tableId":"1281492236403531778"}
+            },
+            {
+                'id':1281492236999122945,
+                'name':'查看饼状图分析报表',
+                'api':'/social-api/api/kpi/analyseStat/fieldsStatisticsPie',
+                'method':'POST',
+                'params':{},
+                'body':{"tableId":"1281492236403531778","fieldIds":["1281492237263364098","1281492237301112834","1281492237338861570","1281492237372416001","1281492237418553345"],"startTime":"2020-07-07","endTime":"2020-07-14"}
             }
         ]
     }
+    # {
+    #     'id':734,
+    #     'name':'自定义报表',
+    #     'children':[{
+    #             'id':732,
+    #             'name':"自定义报表",
+    #             "api":"/davinci-api/api/v3/dashboardPortals",
+    #             "method":"POST",
+    #             "params":{},
+    #             "body":{"description":"","name":"test","publish":True,"roleIds":[],"avatar":"10","projectId":1}
+    #         }
+    #     ]
+    # }
 ]
 system_data = [
     {
@@ -798,10 +1087,10 @@ system_data = [
             {
                 'id':20,
                 'name':'删除部门',
-                'api':'/social-api/sys/sysDepart/deleteBatch?ids=2f3c7d285c0942a1a77b6b89957ad19f',
+                'api':'/social-api/sys/sysDepart/deleteBatch?ids=63a8e68288f042a8b660619e01895a79',
                 'method':'DELETE',
                 'params':{},
-                'body':{"ids":"2f3c7d285c0942a1a77b6b89957ad19f"}
+                'body':{"ids":"63a8e68288f042a8b660619e01895a79"}
             }
         ]
     },
@@ -815,15 +1104,15 @@ system_data = [
                 'api':'/social-api/sys/user/editSysDepartWithUser',
                 'method':'POST',
                 'params':{},
-                'body':{"depId":"db83e1f4548f4397814ad3a63b94a0d1","userIdList":["74"]}
+                'body':{"depId":"db83e1f4548f4397814ad3a63b94a0d1","userIdList":["111"]}
             },
             {
                 'id':23,
                 'name':'移除成员',
-                'api':'/social-api/sys/user/deleteUserInDepart?depId=db83e1f4548f4397814ad3a63b94a0d1&userId=74',
+                'api':'/social-api/sys/user/deleteUserInDepart?depId=63a8e68288f042a8b660619e01895a79&userId=111',
                 'method':'DELETE',
                 'params':{},
-                'body':{"depId":"db83e1f4548f4397814ad3a63b94a0d1","userId":"74"}
+                'body':{"depId":"63a8e68288f042a8b660619e01895a79","userId":"111"}
             },
             {
                 'id':24,
@@ -861,14 +1150,13 @@ system_data = [
                 'api':'/social-api/sys/role/edit',
                 'method':'PUT',
                 'params':{},
-                'body':{"createTime":"2020-07-01 16:02:07","creatorName":"陈飞机","departmentId":"dfb0f10157274eda9ab3e2e6dc91c9e8","departmentName":"SM技术-测试","description":None,"id":"1278237433653157890","number":0,"roleCode":"11111","roleName":"test1111"}
-
+                'body':{"createTime":"2020-07-06 15:46:26","creatorName":"陈岩玺","departmentId":"bd3e24d13b774318b73145a432ca6679","departmentName":"小赵","description":None,"id":"1280045425381924866","number":2,"roleCode":"szcszh","roleName":"小赵测试账号","sort":0,"typeId":"3","typeName":"负责人"}
             },{
                 'id':29,
                 'name':'删除角色',
                 'api':'/social-api/sys/role/delete',
                 'method':'DELETE',
-                'params':{"id":"1278237433653157890"},
+                'params':{"id":"11111111111"},
                 'body':{}
 
             },{
@@ -885,14 +1173,14 @@ system_data = [
                 'api':'/social-api/sys/user/addSysUserRole',
                 'method':'POST',
                 'params':{},
-                'body':{"roleId":"1275681991265673217","userIdList":["74"]}
+                'body':{"roleId":"1275681991265673217","userIdList":["111"]}
 
             },{
                 'id':32,
                 'name':'删除成员',
                 'api':'/social-api/sys/user/deleteUserRole',
                 'method':'DELETE',
-                'params':{'roleId':1275681991265673217,'userId':74},
+                'params':{'roleId':111111111,'userId':111111},
                 'body':{}
 
             },{
@@ -901,7 +1189,7 @@ system_data = [
                 'api':'/social-api/sys/permission/saveRolePermissions',
                 'method':'POST',
                 'params':{},
-                'body':{"roleId":"1260169205514780674","permissionIds":["1","2","34","801","803","804","818","213","113","123","124","125","126","127","128","129","168","6","10","11","114","115","116","117","118","119","12","120","121","1272905421392244738","1272905421425799170","1272905421455159297","1272905421488713730","1272905421513879553","1272905421551628290","1272905421580988418","1272905421606154242","1272905421631320065","1272905466141274114","1272905466170634241","1272905466199994369","1272905466225160194","1272905466250326017","1272905466267103233","1272905466288074754","1272905466309046274","1272905466334212097","13","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","15","16","165","166","167","169","17","170","171","172","173","174","175","18","19","195","196","197","198","199","20","200","201","202","203","204","205","206","207","208","209","21","210","219","22","220","221","222","223","23","24","25","26","27","28","29","3","30","31","32","33","7","701","806","807","808","809","810","811","820","821","824","9","5"],"lastPermissionIds":["1","2","34","801","803","804","818","213","113","123","124","125","126","127","128","129","168","6","10","11","114","115","116","117","118","119","12","120","121","1272905421392244738","1272905421425799170","1272905421455159297","1272905421488713730","1272905421513879553","1272905421551628290","1272905421580988418","1272905421606154242","1272905421631320065","1272905466141274114","1272905466170634241","1272905466199994369","1272905466225160194","1272905466250326017","1272905466267103233","1272905466288074754","1272905466309046274","1272905466334212097","13","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","15","16","165","166","167","169","17","170","171","172","173","174","175","18","19","195","196","197","198","199","20","200","201","202","203","204","205","206","207","208","209","21","210","219","22","220","221","222","223","23","24","25","26","27","28","29","3","30","31","32","33","7","701","806","807","808","809","810","811","820","821","824","9"],"objectPermissions":[{"component":"","componentName":"","id":"818","objects":[{"code":"ACCOUNT_GROUP_LIST","name":"账户组列表","lastFieldCodes":["showSensitiveInfo","channelCode","creatorName","departmentName","departmentId","createTime"],"fieldCodes":["showSensitiveInfo","channelCode","creatorName","departmentName","departmentId","createTime"],"key":"ACCOUNT_GROUP_LIST","slotTitle":"账户组列表"}],"key":"818","slotTitle":"账号组管理","permission":[],"permissionId":"818"},{"component":"","componentName":"","id":"819","objects":[{"code":"CHANNEL_LIST","name":"渠道列表","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_LIST","slotTitle":"渠道列表"}],"key":"819","slotTitle":"渠道管理","permission":[],"permissionId":"819"},{"component":None,"componentName":None,"id":"49","objects":[{"code":"IMPORT_TASK","name":"导入任务信息","lastFieldCodes":[],"fieldCodes":[],"key":"IMPORT_TASK","slotTitle":"导入任务信息"},{"code":"IMPORT_TASL_INFO","name":"导入任务明细","lastFieldCodes":[],"fieldCodes":[],"key":"IMPORT_TASL_INFO","slotTitle":"导入任务明细"}],"key":"49","slotTitle":"导入数据任务","permission":[],"permissionId":"49"},{"component":None,"componentName":None,"id":"213","objects":[{"code":"TAG_TREE_LIST","name":"标签列表","lastFieldCodes":["showSensitiveInfo"],"fieldCodes":["showSensitiveInfo"],"key":"TAG_TREE_LIST","slotTitle":"标签列表"}],"key":"213","slotTitle":"标签管理设置","permission":[],"permissionId":"213"},{"component":None,"componentName":None,"id":"113","objects":[{"code":"CRM_OBJECT_DYNAMIC.1","name":"线索信息","lastFieldCodes":["showSensitiveInfo","address","deptName","leadsName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","线索来源","客户级别","remark","人员","dept_id","附件","source_dept_id"],"fieldCodes":["showSensitiveInfo","address","deptName","leadsName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","线索来源","客户级别","remark","人员","dept_id","附件","source_dept_id"],"key":"CRM_OBJECT_DYNAMIC.1","slotTitle":"线索信息"},{"code":"CRM_OBJECT_DYNAMIC.2","name":"客户信息","lastFieldCodes":["showSensitiveInfo","address","deptName","customerName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","memberId","memberName","realName","客户来源","客户级别","remark","人员","dept_id","source_dept_id","字段"],"fieldCodes":["showSensitiveInfo","address","deptName","customerName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","memberId","memberName","realName","客户来源","客户级别","remark","人员","dept_id","source_dept_id","字段"],"key":"CRM_OBJECT_DYNAMIC.2","slotTitle":"客户信息"}],"key":"113","slotTitle":"客户管理","permission":[],"permissionId":"113"},{"component":"channel_table","componentName":"1272899620246183937","id":"1272899620346847234","objects":[{"code":"CHANNEL_TABLE_1272899620246183937","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272899620246183937","slotTitle":"账号组"}],"key":"1272899620346847234","slotTitle":"测试","permission":[],"permissionId":"1272899620346847234"},{"component":"channel_table","componentName":"1272899911280549890","id":"1272899911309910018","objects":[{"code":"CHANNEL_TABLE_1272899911280549890","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272899911280549890","slotTitle":"客户"}],"key":"1272899911309910018","slotTitle":"测试渠道","permission":[],"permissionId":"1272899911309910018"},{"component":"channel_table","componentName":"1272905421329330178","id":"1272905421392244738","objects":[{"code":"CHANNEL_TABLE_1272905421329330178","name":"账号组","lastFieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"fieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"key":"CHANNEL_TABLE_1272905421329330178","slotTitle":"账号组"}],"key":"1272905421392244738","slotTitle":"yrty","permission":[],"permissionId":"1272905421392244738"},{"component":"channel_table","componentName":"1272905466111913986","id":"1272905466141274114","objects":[{"code":"CHANNEL_TABLE_1272905466111913986","name":"账号组","lastFieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"fieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"key":"CHANNEL_TABLE_1272905466111913986","slotTitle":"账号组"}],"key":"1272905466141274114","slotTitle":"ryrtyrty","permission":[],"permissionId":"1272905466141274114"},{"component":"channel_table","componentName":"1272905514883280898","id":"1272905514908446721","objects":[{"code":"CHANNEL_TABLE_1272905514883280898","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272905514883280898","slotTitle":"账号组"}],"key":"1272905514908446721","slotTitle":"rturtu","permission":[],"permissionId":"1272905514908446721"},{"component":"channel_table","componentName":"1272907761931317250","id":"1272907761952288770","objects":[{"code":"CHANNEL_TABLE_1272907761931317250","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272907761931317250","slotTitle":"账号组"}],"key":"1272907761952288770","slotTitle":"GFDGFDG","permission":[],"permissionId":"1272907761952288770"},{"component":"channel_table","componentName":"1272911063536431105","id":"1272911063565791234","objects":[{"code":"CHANNEL_TABLE_1272911063536431105","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272911063536431105","slotTitle":"客户"}],"key":"1272911063565791234","slotTitle":"SAHDS","permission":[],"permissionId":"1272911063565791234"},{"component":"channel_table","componentName":"1273095058131836929","id":"1273095058203140097","objects":[{"code":"CHANNEL_TABLE_1273095058131836929","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273095058131836929","slotTitle":"账号组"}],"key":"1273095058203140097","slotTitle":"验收测试","permission":[],"permissionId":"1273095058203140097"},{"component":"channel_table","componentName":"1273099515120902146","id":"1273099515146067970","objects":[{"code":"CHANNEL_TABLE_1273099515120902146","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273099515120902146","slotTitle":"账号组"}],"key":"1273099515146067970","slotTitle":"34234234356657567678665645634634663636346343463","permission":[],"permissionId":"1273099515146067970"},{"component":"channel_table","componentName":"1273136992124723202","id":"1273136992154083329","objects":[{"code":"CHANNEL_TABLE_1273136992124723202","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273136992124723202","slotTitle":"客户"}],"key":"1273136992154083329","slotTitle":"ertret","permission":[],"permissionId":"1273136992154083329"},{"component":"channel_table","componentName":"1273151241161072641","id":"1273151241190432769","objects":[{"code":"CHANNEL_TABLE_1273151241161072641","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273151241161072641","slotTitle":"账号组"}],"key":"1273151241190432769","slotTitle":"才拿到了","permission":[],"permissionId":"1273151241190432769"},{"component":"channel_table","componentName":"1273187986082684930","id":"1273187986107850753","objects":[{"code":"CHANNEL_TABLE_1273187986082684930","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273187986082684930","slotTitle":"客户"}],"key":"1273187986107850753","slotTitle":"test123","permission":[],"permissionId":"1273187986107850753"},{"component":"channel_table","componentName":"1273825050318921729","id":"1273825050348281858","objects":[{"code":"CHANNEL_TABLE_1273825050318921729","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273825050318921729","slotTitle":"客户"}],"key":"1273825050348281858","slotTitle":"ttest1","permission":[],"permissionId":"1273825050348281858"},{"component":"channel_table","componentName":"1273826184416780290","id":"1273826184446140417","objects":[{"code":"CHANNEL_TABLE_1273826184416780290","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273826184416780290","slotTitle":"账号组"}],"key":"1273826184446140417","slotTitle":"555","permission":[],"permissionId":"1273826184446140417"},{"component":"channel_table","componentName":"1273918310894854146","id":"1273918310961963009","objects":[{"code":"CHANNEL_TABLE_1273918310894854146","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273918310894854146","slotTitle":"账号组"}],"key":"1273918310961963009","slotTitle":"测试2","permission":[],"permissionId":"1273918310961963009"},{"component":"channel_table","componentName":"1273918904531476481","id":"1273918904556642305","objects":[{"code":"CHANNEL_TABLE_1273918904531476481","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273918904531476481","slotTitle":"客户"}],"key":"1273918904556642305","slotTitle":"测试11","permission":[],"permissionId":"1273918904556642305"},{"component":"channel_table","componentName":"1274235680750362626","id":"1274235680775528449","objects":[{"code":"CHANNEL_TABLE_1274235680750362626","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1274235680750362626","slotTitle":"账号组"}],"key":"1274235680775528449","slotTitle":"sadsa","permission":[],"permissionId":"1274235680775528449"},{"component":"channel_table","componentName":"1277423261168230401","id":"1277423261226950657","objects":[{"code":"CHANNEL_TABLE_1277423261168230401","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1277423261168230401","slotTitle":"账号组"}],"key":"1277423261226950657","slotTitle":"测试组","permission":[],"permissionId":"1277423261226950657"},{"component":"channel_table","componentName":"1277424729468231681","id":"1277424729489203201","objects":[{"code":"CHANNEL_TABLE_1277424729468231681","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1277424729468231681","slotTitle":"账号组"}],"key":"1277424729489203201","slotTitle":"测试权限","permission":[],"permissionId":"1277424729489203201"},{"component":None,"componentName":None,"id":"15","objects":[{"code":"DEPARTMENT","name":"部门","lastFieldCodes":["showSensitiveInfo","title","departName","description"],"fieldCodes":["showSensitiveInfo","title","departName","description"],"key":"DEPARTMENT","slotTitle":"部门"}],"key":"15","slotTitle":"部门管理","permission":[],"permissionId":"15"},{"component":None,"componentName":None,"id":"214","objects":[{"code":"PRODUCT_CONFIG_LIST","name":"产品列表","lastFieldCodes":[],"fieldCodes":[],"key":"PRODUCT_CONFIG_LIST","slotTitle":"产品列表"}],"key":"214","slotTitle":"产品设置","permission":[],"permissionId":"214"},{"component":None,"componentName":None,"id":"25","objects":[{"code":"ROLE","name":"角色","lastFieldCodes":["showSensitiveInfo","roleName","roleCode","departmentId","description","createBy","createTime"],"fieldCodes":["showSensitiveInfo","roleName","roleCode","departmentId","description","createBy","createTime"],"key":"ROLE","slotTitle":"角色"},{"code":"ROLE_LIST","name":"角色列表","lastFieldCodes":["showSensitiveInfo","roleName","number","creatorName","createTime"],"fieldCodes":["showSensitiveInfo","roleName","number","creatorName","createTime"],"key":"ROLE_LIST","slotTitle":"角色列表"}],"key":"25","slotTitle":"角色管理","permission":[],"permissionId":"25"},{"component":None,"componentName":None,"id":"7","objects":[{"code":"MEMBER","name":"成员","lastFieldCodes":["showSensitiveInfo","username","realname","avatar","email","phone","status"],"fieldCodes":["showSensitiveInfo","username","realname","avatar","email","phone","status"],"key":"MEMBER","slotTitle":"成员"},{"code":"MEMBER_LIST","name":"成员列表","lastFieldCodes":["showSensitiveInfo","username","realname","avatar","workNo","status","departIds","roleIds","outWeiboIds","creatorName","createTime"],"fieldCodes":["showSensitiveInfo","username","realname","avatar","workNo","status","departIds","roleIds","outWeiboIds","creatorName","createTime"],"key":"MEMBER_LIST","slotTitle":"成员列表"}],"key":"7","slotTitle":"成员管理","permission":[],"permissionId":"7"},{"component":"","componentName":"","id":"727","objects":[{"code":"OPERATION_LOG_LIST","name":"后台日志","lastFieldCodes":[],"fieldCodes":[],"key":"OPERATION_LOG_LIST","slotTitle":"后台日志"}],"key":"727","slotTitle":"操作日志","permission":[],"permissionId":"727"}]}
+                'body':{"roleId":"1280045425381924866","permissionIds":["1","2","34","801","803","804","818","213","113","123","124","125","126","127","128","129","168","6","10","11","114","115","116","117","118","119","12","120","121","1272905421392244738","1272905421425799170","1272905421455159297","1272905421488713730","1272905421513879553","1272905421551628290","1272905421580988418","1272905421606154242","1272905421631320065","1272905466141274114","1272905466170634241","1272905466199994369","1272905466225160194","1272905466250326017","1272905466267103233","1272905466288074754","1272905466309046274","1272905466334212097","13","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","15","16","165","166","167","169","17","170","171","172","173","174","175","18","19","195","196","197","198","199","20","200","201","202","203","204","205","206","207","208","209","21","210","219","22","220","221","222","223","23","24","25","26","27","28","29","3","30","31","32","33","7","701","806","807","808","809","810","811","820","821","824","9","5"],"lastPermissionIds":["1","2","34","801","803","804","818","213","113","123","124","125","126","127","128","129","168","6","10","11","114","115","116","117","118","119","12","120","121","1272905421392244738","1272905421425799170","1272905421455159297","1272905421488713730","1272905421513879553","1272905421551628290","1272905421580988418","1272905421606154242","1272905421631320065","1272905466141274114","1272905466170634241","1272905466199994369","1272905466225160194","1272905466250326017","1272905466267103233","1272905466288074754","1272905466309046274","1272905466334212097","13","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","15","16","165","166","167","169","17","170","171","172","173","174","175","18","19","195","196","197","198","199","20","200","201","202","203","204","205","206","207","208","209","21","210","219","22","220","221","222","223","23","24","25","26","27","28","29","3","30","31","32","33","7","701","806","807","808","809","810","811","820","821","824","9"],"objectPermissions":[{"component":"","componentName":"","id":"818","objects":[{"code":"ACCOUNT_GROUP_LIST","name":"账户组列表","lastFieldCodes":["showSensitiveInfo","channelCode","creatorName","departmentName","departmentId","createTime"],"fieldCodes":["showSensitiveInfo","channelCode","creatorName","departmentName","departmentId","createTime"],"key":"ACCOUNT_GROUP_LIST","slotTitle":"账户组列表"}],"key":"818","slotTitle":"账号组管理","permission":[],"permissionId":"818"},{"component":"","componentName":"","id":"819","objects":[{"code":"CHANNEL_LIST","name":"渠道列表","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_LIST","slotTitle":"渠道列表"}],"key":"819","slotTitle":"渠道管理","permission":[],"permissionId":"819"},{"component":None,"componentName":None,"id":"49","objects":[{"code":"IMPORT_TASK","name":"导入任务信息","lastFieldCodes":[],"fieldCodes":[],"key":"IMPORT_TASK","slotTitle":"导入任务信息"},{"code":"IMPORT_TASL_INFO","name":"导入任务明细","lastFieldCodes":[],"fieldCodes":[],"key":"IMPORT_TASL_INFO","slotTitle":"导入任务明细"}],"key":"49","slotTitle":"导入数据任务","permission":[],"permissionId":"49"},{"component":None,"componentName":None,"id":"213","objects":[{"code":"TAG_TREE_LIST","name":"标签列表","lastFieldCodes":["showSensitiveInfo"],"fieldCodes":["showSensitiveInfo"],"key":"TAG_TREE_LIST","slotTitle":"标签列表"}],"key":"213","slotTitle":"标签管理设置","permission":[],"permissionId":"213"},{"component":None,"componentName":None,"id":"113","objects":[{"code":"CRM_OBJECT_DYNAMIC.1","name":"线索信息","lastFieldCodes":["showSensitiveInfo","address","deptName","leadsName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","线索来源","客户级别","remark","人员","dept_id","附件","source_dept_id"],"fieldCodes":["showSensitiveInfo","address","deptName","leadsName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","线索来源","客户级别","remark","人员","dept_id","附件","source_dept_id"],"key":"CRM_OBJECT_DYNAMIC.1","slotTitle":"线索信息"},{"code":"CRM_OBJECT_DYNAMIC.2","name":"客户信息","lastFieldCodes":["showSensitiveInfo","address","deptName","customerName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","memberId","memberName","realName","客户来源","客户级别","remark","人员","dept_id","source_dept_id","字段"],"fieldCodes":["showSensitiveInfo","address","deptName","customerName","ownerUserName","createUserName","lastFollowupTime","lastContent","createTime","nextTime","telephone","mobile","memberId","memberName","realName","客户来源","客户级别","remark","人员","dept_id","source_dept_id","字段"],"key":"CRM_OBJECT_DYNAMIC.2","slotTitle":"客户信息"}],"key":"113","slotTitle":"客户管理","permission":[],"permissionId":"113"},{"component":"channel_table","componentName":"1272899620246183937","id":"1272899620346847234","objects":[{"code":"CHANNEL_TABLE_1272899620246183937","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272899620246183937","slotTitle":"账号组"}],"key":"1272899620346847234","slotTitle":"测试","permission":[],"permissionId":"1272899620346847234"},{"component":"channel_table","componentName":"1272899911280549890","id":"1272899911309910018","objects":[{"code":"CHANNEL_TABLE_1272899911280549890","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272899911280549890","slotTitle":"客户"}],"key":"1272899911309910018","slotTitle":"测试渠道","permission":[],"permissionId":"1272899911309910018"},{"component":"channel_table","componentName":"1272905421329330178","id":"1272905421392244738","objects":[{"code":"CHANNEL_TABLE_1272905421329330178","name":"账号组","lastFieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"fieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"key":"CHANNEL_TABLE_1272905421329330178","slotTitle":"账号组"}],"key":"1272905421392244738","slotTitle":"yrty","permission":[],"permissionId":"1272905421392244738"},{"component":"channel_table","componentName":"1272905466111913986","id":"1272905466141274114","objects":[{"code":"CHANNEL_TABLE_1272905466111913986","name":"账号组","lastFieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"fieldCodes":["showSensitiveInfo","id","applicant_company","applicant","approver_company","examination","registrant","account_type","account","password","binding_phone","account_company","account_owner"],"key":"CHANNEL_TABLE_1272905466111913986","slotTitle":"账号组"}],"key":"1272905466141274114","slotTitle":"ryrtyrty","permission":[],"permissionId":"1272905466141274114"},{"component":"channel_table","componentName":"1272905514883280898","id":"1272905514908446721","objects":[{"code":"CHANNEL_TABLE_1272905514883280898","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272905514883280898","slotTitle":"账号组"}],"key":"1272905514908446721","slotTitle":"rturtu","permission":[],"permissionId":"1272905514908446721"},{"component":"channel_table","componentName":"1272907761931317250","id":"1272907761952288770","objects":[{"code":"CHANNEL_TABLE_1272907761931317250","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272907761931317250","slotTitle":"账号组"}],"key":"1272907761952288770","slotTitle":"GFDGFDG","permission":[],"permissionId":"1272907761952288770"},{"component":"channel_table","componentName":"1272911063536431105","id":"1272911063565791234","objects":[{"code":"CHANNEL_TABLE_1272911063536431105","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1272911063536431105","slotTitle":"客户"}],"key":"1272911063565791234","slotTitle":"SAHDS","permission":[],"permissionId":"1272911063565791234"},{"component":"channel_table","componentName":"1273095058131836929","id":"1273095058203140097","objects":[{"code":"CHANNEL_TABLE_1273095058131836929","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273095058131836929","slotTitle":"账号组"}],"key":"1273095058203140097","slotTitle":"验收测试","permission":[],"permissionId":"1273095058203140097"},{"component":"channel_table","componentName":"1273099515120902146","id":"1273099515146067970","objects":[{"code":"CHANNEL_TABLE_1273099515120902146","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273099515120902146","slotTitle":"账号组"}],"key":"1273099515146067970","slotTitle":"34234234356657567678665645634634663636346343463","permission":[],"permissionId":"1273099515146067970"},{"component":"channel_table","componentName":"1273136992124723202","id":"1273136992154083329","objects":[{"code":"CHANNEL_TABLE_1273136992124723202","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273136992124723202","slotTitle":"客户"}],"key":"1273136992154083329","slotTitle":"ertret","permission":[],"permissionId":"1273136992154083329"},{"component":"channel_table","componentName":"1273151241161072641","id":"1273151241190432769","objects":[{"code":"CHANNEL_TABLE_1273151241161072641","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273151241161072641","slotTitle":"账号组"}],"key":"1273151241190432769","slotTitle":"才拿到了","permission":[],"permissionId":"1273151241190432769"},{"component":"channel_table","componentName":"1273187986082684930","id":"1273187986107850753","objects":[{"code":"CHANNEL_TABLE_1273187986082684930","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273187986082684930","slotTitle":"客户"}],"key":"1273187986107850753","slotTitle":"test123","permission":[],"permissionId":"1273187986107850753"},{"component":"channel_table","componentName":"1273825050318921729","id":"1273825050348281858","objects":[{"code":"CHANNEL_TABLE_1273825050318921729","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273825050318921729","slotTitle":"客户"}],"key":"1273825050348281858","slotTitle":"ttest1","permission":[],"permissionId":"1273825050348281858"},{"component":"channel_table","componentName":"1273826184416780290","id":"1273826184446140417","objects":[{"code":"CHANNEL_TABLE_1273826184416780290","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273826184416780290","slotTitle":"账号组"}],"key":"1273826184446140417","slotTitle":"555","permission":[],"permissionId":"1273826184446140417"},{"component":"channel_table","componentName":"1273918310894854146","id":"1273918310961963009","objects":[{"code":"CHANNEL_TABLE_1273918310894854146","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273918310894854146","slotTitle":"账号组"}],"key":"1273918310961963009","slotTitle":"测试2","permission":[],"permissionId":"1273918310961963009"},{"component":"channel_table","componentName":"1273918904531476481","id":"1273918904556642305","objects":[{"code":"CHANNEL_TABLE_1273918904531476481","name":"客户","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1273918904531476481","slotTitle":"客户"}],"key":"1273918904556642305","slotTitle":"测试11","permission":[],"permissionId":"1273918904556642305"},{"component":"channel_table","componentName":"1274235680750362626","id":"1274235680775528449","objects":[{"code":"CHANNEL_TABLE_1274235680750362626","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1274235680750362626","slotTitle":"账号组"}],"key":"1274235680775528449","slotTitle":"sadsa","permission":[],"permissionId":"1274235680775528449"},{"component":"channel_table","componentName":"1277423261168230401","id":"1277423261226950657","objects":[{"code":"CHANNEL_TABLE_1277423261168230401","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1277423261168230401","slotTitle":"账号组"}],"key":"1277423261226950657","slotTitle":"测试组","permission":[],"permissionId":"1277423261226950657"},{"component":"channel_table","componentName":"1277424729468231681","id":"1277424729489203201","objects":[{"code":"CHANNEL_TABLE_1277424729468231681","name":"账号组","lastFieldCodes":[],"fieldCodes":[],"key":"CHANNEL_TABLE_1277424729468231681","slotTitle":"账号组"}],"key":"1277424729489203201","slotTitle":"测试权限","permission":[],"permissionId":"1277424729489203201"},{"component":None,"componentName":None,"id":"15","objects":[{"code":"DEPARTMENT","name":"部门","lastFieldCodes":["showSensitiveInfo","title","departName","description"],"fieldCodes":["showSensitiveInfo","title","departName","description"],"key":"DEPARTMENT","slotTitle":"部门"}],"key":"15","slotTitle":"部门管理","permission":[],"permissionId":"15"},{"component":None,"componentName":None,"id":"214","objects":[{"code":"PRODUCT_CONFIG_LIST","name":"产品列表","lastFieldCodes":[],"fieldCodes":[],"key":"PRODUCT_CONFIG_LIST","slotTitle":"产品列表"}],"key":"214","slotTitle":"产品设置","permission":[],"permissionId":"214"},{"component":None,"componentName":None,"id":"25","objects":[{"code":"ROLE","name":"角色","lastFieldCodes":["showSensitiveInfo","roleName","roleCode","departmentId","description","createBy","createTime"],"fieldCodes":["showSensitiveInfo","roleName","roleCode","departmentId","description","createBy","createTime"],"key":"ROLE","slotTitle":"角色"},{"code":"ROLE_LIST","name":"角色列表","lastFieldCodes":["showSensitiveInfo","roleName","number","creatorName","createTime"],"fieldCodes":["showSensitiveInfo","roleName","number","creatorName","createTime"],"key":"ROLE_LIST","slotTitle":"角色列表"}],"key":"25","slotTitle":"角色管理","permission":[],"permissionId":"25"},{"component":None,"componentName":None,"id":"7","objects":[{"code":"MEMBER","name":"成员","lastFieldCodes":["showSensitiveInfo","username","realname","avatar","email","phone","status"],"fieldCodes":["showSensitiveInfo","username","realname","avatar","email","phone","status"],"key":"MEMBER","slotTitle":"成员"},{"code":"MEMBER_LIST","name":"成员列表","lastFieldCodes":["showSensitiveInfo","username","realname","avatar","workNo","status","departIds","roleIds","outWeiboIds","creatorName","createTime"],"fieldCodes":["showSensitiveInfo","username","realname","avatar","workNo","status","departIds","roleIds","outWeiboIds","creatorName","createTime"],"key":"MEMBER_LIST","slotTitle":"成员列表"}],"key":"7","slotTitle":"成员管理","permission":[],"permissionId":"7"},{"component":"","componentName":"","id":"727","objects":[{"code":"OPERATION_LOG_LIST","name":"后台日志","lastFieldCodes":[],"fieldCodes":[],"key":"OPERATION_LOG_LIST","slotTitle":"后台日志"}],"key":"727","slotTitle":"操作日志","permission":[],"permissionId":"727"}]}
             }
         ]
     },
@@ -915,7 +1203,9 @@ system_data = [
                 'api':'/social-api/sys/user/edit',
                 'method':'PUT',
                 'params':{},
-                'body':{"avatar":None,"createTime":"2020-07-01 15:28:56","creator":"72","creatorName":"赵子龙","departIds":None,"email":None,"id":"75","outWeiboIds":"[\"\"]","phone":"","realname":"接口测试","roleIds":[{"id":"1275678397007192065","name":"角色1"}],"sex":None,"status":1,"username":"apitest","workNo":"1234568989","birthday":"","selectedroles":"1275678397007192065","selecteddeparts":""}
+                'body':{"avatar":None,"createTime":"2020-07-06 15:46:53","creator":"86","creatorName":"赵静波","departIds":[{"id":"8cbfc06cb1d9467aa45c7d2ded82cfad","name":"测试部门"}],"email":"3467526317@qq.com","id":"193","outWeiboIds":"[\"\"]","phone":"15221346794","realname":"赵测试","roleIds":[{"id":"1280045425381924866","name":"小赵测试账号"}],"sex":None,"status":1,"username":"xiaozhao","workNo":"1234","birthday":"","selectedroles":"1280045425381924866","selecteddeparts":"8cbfc06cb1d9467aa45c7d2ded82cfad"}
+
+
             },
             {
                 "id":11,
@@ -1003,7 +1293,7 @@ list_test_2 = [
             },
             {
                 "id":194,
-                'name':'商业智能',
+                'name':'业绩分析',
                 'children':business_data
             },
         ]

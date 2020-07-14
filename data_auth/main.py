@@ -12,8 +12,8 @@ class Main():
         s.headers.setdefault("Authorization","c1b4765cacaf4618a166d870d803a3f3")
         self.session_admin:requests.Session= s
         t = requests.Session()
-        t.headers.setdefault("Admin-Token", "27feeb3654d34557a6a9ef8e190a4660")
-        t.headers.setdefault("Authorization", "27feeb3654d34557a6a9ef8e190a4660")
+        t.headers.setdefault("Admin-Token", "c4e67dca65514f19b1033e71ec0954f9")
+        t.headers.setdefault("Authorization", "c4e67dca65514f19b1033e71ec0954f9")
         self.session_tester: requests.Session = t
 
     def start(self):
@@ -87,7 +87,6 @@ class Main():
                                         department_list.append(get_permission.get('department', None))
                                     if len(set(department)&set(department_list)) ==0 and get_permission.get('employee_name', None) != owner:
                                         print(f"权限校验失败，期望值：不能看到其他数据，实际值：能看到其他数据")
-
                         print("-"*100)
     def regExp_response(self,object,response:dict):
         key_lies = object["objects"].split('.')

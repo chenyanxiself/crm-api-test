@@ -18,12 +18,12 @@ class Main:
     def __init__(self):
         self.write_header()
         s = requests.Session()
-        s.headers.setdefault('Admin-Token', '8f38b2df50fa45b9a328889601a11873')
-        s.headers.setdefault('Authorization', '8f38b2df50fa45b9a328889601a11873')
+        s.headers.setdefault('Admin-Token', 'c1b4765cacaf4618a166d870d803a3f3')
+        s.headers.setdefault('Authorization', 'c1b4765cacaf4618a166d870d803a3f3')
         self.session_admin: requests.Session=s
         t = requests.Session()
-        t.headers.setdefault('Admin-Token', '0e56e625f1d54902bfa465bf2c2d2bd7')
-        t.headers.setdefault('Authorization', '0e56e625f1d54902bfa465bf2c2d2bd7')
+        t.headers.setdefault('Admin-Token', 'c4e67dca65514f19b1033e71ec0954f9')
+        t.headers.setdefault('Authorization', 'c4e67dca65514f19b1033e71ec0954f9')
         self.session_tester: requests.Session=t
     def start(self):
         self.domain()

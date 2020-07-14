@@ -16,12 +16,12 @@ class Main:
         # self.session_tester: requests.Session = Login(session_tester, Config.test_user).get_login_session()
         self.write_header()
         s = requests.Session()
-        s.headers.setdefault('Admin-Token', 'd6a54dd39f334172b351b98b502cb6d2')
-        s.headers.setdefault('Authorization', 'd6a54dd39f334172b351b98b502cb6d2')
+        s.headers.setdefault('Admin-Token', 'c1b4765cacaf4618a166d870d803a3f3')
+        s.headers.setdefault('Authorization', 'c1b4765cacaf4618a166d870d803a3f3')
         self.session_admin: requests.Session=s
         t = requests.Session()
-        t.headers.setdefault('Admin-Token', 'b5af83b73f964f34b94decfb71b56f35')
-        t.headers.setdefault('Authorization', 'b5af83b73f964f34b94decfb71b56f35')
+        t.headers.setdefault('Admin-Token', 'c4e67dca65514f19b1033e71ec0954f9')
+        t.headers.setdefault('Authorization', 'c4e67dca65514f19b1033e71ec0954f9')
         print(t.headers)
         self.session_tester: requests.Session=t
     def start(self):
@@ -35,9 +35,11 @@ class Main:
                 auth_list.append(i['id'])
                 self.domain(i['children'],auth_list)
             else:
+                print(f'{"-"*10} 权限ID：{i["id"]}  权限名字：{i["name"]}  {"-"*10}')
                 auth_res = self.session_admin.get(url=Config.base_host+'/social-api/sys/permission/queryRolePermissions',
-                                 params={'_t': 1593591992, 'roleId': Config.test_user['role_id']})
+                                 params={'_t': 1594708256, 'roleId': Config.test_user['role_id']})
                 lastPermissionIds = []
+                print(auth_res.content.decode('utf-8'))
                 if auth_res.status_code!=200:
                     raise SystemError('获取权限列表失败')
                 for j in json.loads(auth_res.text)['result']:
@@ -158,9 +160,11 @@ class Main:
             args.setdefault('data', i.get('body',{}))
         else:
             args.setdefault('json', i.get('body',{}))
+        print(args)
         res = self.session_tester.request(**args)
         try:
             res_json = json.loads(res.text)
+            print(res_json)
             return res_json
         except:
             return {'code':500}

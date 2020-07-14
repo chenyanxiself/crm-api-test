@@ -11,7 +11,7 @@ class Config:
     test_user = {
         'username': 'xiaozhao',
         'password': 'xX123456',
-        'role_id':1275679967639822337
+        'role_id':1280045425381924866
     }
     login_url = 'https://bd2.bd888.online/login'
     verify_img_url = 'http://bd2.bd888.online/getVerifyCode'
@@ -20,5 +20,5 @@ class Config:
         'apiKey': 'xa8tTauIIII4MGhwMSYiNkwG',
         'secretKey': 'E32T1NjOjoIqy2EgTomfQLGfzoTsKMna'
     }
-    base_host = 'https://bd2.bd888.online'
+    base_host = 'https://socialapidev2.bjx.cloud'
 
