@@ -21,25 +21,11 @@ base_data = [
                                          "pageSize": 20},
                                 'objects':'result.data.records'
                             }]
-                    },
-                    {
-                        'id': 818,
-                        'name': '账号组管理',
-                        'children': [
-                            {
-                                'id': 810,
-                                'name': '查看账号组列表',
-                                'api': '/social-api/api/channel/channel/queryAccountGroup',
-                                'method': 'POST',
-                                'params': {},
-                                'body': {"channelFlag": 2, "column": "createTime", "order": "desc",
-                                         "field": "id,,channelCode,channelName,creatorName,createTime,status,departmentName,action",
-                                         "pageNo": 1, "pageSize": 20},
-                                'objects':'result.records'
-                            }],
-                        }
+                    }
                     ]
-            },
+            }
+        ]
+        },
             {
                 'id': 802,
                 'name': '渠道客户资源',
@@ -58,111 +44,79 @@ base_data = [
                                          "pageSize": 20},
                                 'objects':'result.data.records'
                             }]
-                    },
-                    {
-                        'id': 819,
-                        'name': '渠道管理',
-                        'children': [
-                            {
-                                'id': 816,
-                                'name': '查看渠道列表',
-                                'method': 'POST',
-                                'api': '/social-api/api/channel/channel/queryChannelAccount',
-                                'params': {},
-                                'body': {"channelFlag": 1, "column": "createTime", "order": "desc",
-                                         "field": "id,,channelCode,channelName,creatorName,createTime,status,departmentName,action",
-                                         "pageNo": 1, "pageSize": 20},
-                                'objects':'result.records'
-                            }]
-                    }]
+                    },]
             }]
-        },
-        {
-            'id': 49,
-            'name': '导入数据任务',
-            'children': [
-            {
-                'id': 50,
-                'name': '查看导入任务列表',
-                'api': '/social-api/api/crm/importTask/select',
-                'method': 'POST',
-                'params': {},
-                'body': {"importObjectId": "0", "channelId": "0", "column": "createTime", "order": "desc",
-                         "field": "id,,,fileName,totalCount,undefined,undefined,finishMsg,departmentName,creatorName,tableName,createTime,action",
-                         "pageNo": 1, "pageSize": 20},
-                'objects': 'result.records'
-            }]
-        },
-        {
-            'id' : 850,
-            'name' : '业绩数据',
-            'children':[
-                {
-                    'id':1281492187774771202,
-                    'name':'电服部',
-                    'children' : [
-                        {
-                            'id': '1281492187867045890',
-                            'name': '员工数据',
-                            'children': [
-                                {
-                                    'id': 1281492187913183233,
-                                    'name': '查看列表数据',
-                                    'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
-                                    'method': 'POST',
-                                    'params': {},
-                                    'body': {"tableId": "1281492187724439553", "column": "createTime", "order": "desc",
-                                             "field": "id,", "pageNo": 1, "pageSize": 20},
-                                    'objects':'result.data.records'
-                                },
-                            ]
-                        }
-                ]
-                },
-                {
-                'id':1281492211007021058,
-                'name':'代理部',
-                'children':[
-                    {
-                        'id':1281492211095101442,
-                        'name':'员工数据',
-                        'children':[
-                            {
-                                'id': 1281492211132850177,
-                                'name': '查看列表数据',
-                                'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
-                                'method': 'POST',
-                                'params': {},
-                                'body': {"tableId":"1281492210956689410","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20},
-                                'objects': 'result.data.records'
-                            }],
-                    }
-            ]
-
-            },
-                {
-                'id':1281492236445474817,
-                'name':'市场部',
-                'children':[
-                    {
-                        'id':1281492236541943809,
-                        'name':'员工数据',
-                        'children':[
-                            {
-                                'id': 1281492236579692545,
-                                'name': '查看列表数据',
-                                'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
-                                'method': 'POST',
-                                'params': {},
-                                'body': {"tableId":"1281492236403531778","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20},
-                                'objects': 'result.data.records'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
+        #
+        # {
+        #     'id' : 850,
+        #     'name' : '业绩数据',
+        #     'children':[
+        #         {
+        #             'id':1281492187774771202,
+        #             'name':'电服部',
+        #             'children' : [
+        #                 {
+        #                     'id': '1281492187867045890',
+        #                     'name': '员工数据',
+        #                     'children': [
+        #                         {
+        #                             'id': 1281492187913183233,
+        #                             'name': '查看列表数据',
+        #                             'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
+        #                             'method': 'POST',
+        #                             'params': {},
+        #                             'body': {"tableId": "1281492187724439553", "column": "createTime", "order": "desc",
+        #                                      "field": "id,", "pageNo": 1, "pageSize": 20},
+        #                             'objects':'result.data.records'
+        #                         },
+        #                     ]
+        #                 }
+        #         ]
+        #         },
+        #         {
+        #         'id':1281492211007021058,
+        #         'name':'代理部',
+        #         'children':[
+        #             {
+        #                 'id':1281492211095101442,
+        #                 'name':'员工数据',
+        #                 'children':[
+        #                     {
+        #                         'id': 1281492211132850177,
+        #                         'name': '查看列表数据',
+        #                         'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
+        #                         'method': 'POST',
+        #                         'params': {},
+        #                         'body': {"tableId":"1281492210956689410","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20},
+        #                         'objects': 'result.data.records'
+        #                     }],
+        #             }
+        #     ]
+        #
+        #     },
+        #         {
+        #         'id':1281492236445474817,
+        #         'name':'市场部',
+        #         'children':[
+        #             {
+        #                 'id':1281492236541943809,
+        #                 'name':'员工数据',
+        #                 'children':[
+        #                     {
+        #                         'id': 1281492236579692545,
+        #                         'name': '查看列表数据',
+        #                         'api': '/social-api/api/channel/channelTableProperty/performanceDatalist',
+        #                         'method': 'POST',
+        #                         'params': {},
+        #                         'body': {"tableId":"1281492236403531778","column":"createTime","order":"desc","field":"id,","pageNo":1,"pageSize":20},
+        #                         'objects': 'result.data.records'
+        #                     }
+        #                 ]
+        #             }
+        #         ]
+        #     }
+        # ]
+    # },
     # {
     #     'id':1281492187825102849,
     #     'name':'电服部',
@@ -210,4 +164,3 @@ base_data = [
     #         }
     #     ]
     # }
-]

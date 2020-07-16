@@ -14,7 +14,7 @@ from third_auth.config import Config
 from third_auth.auth_consts import third_data
 import csv
 
-class Main:
+class Main_third_jurisdiction:
     def __init__(self):
         self.write_header()
         s = requests.Session()
@@ -200,7 +200,7 @@ class Main:
 
 
 if __name__ == '__main__':
-    Main().start()
+    Main_third_jurisdiction().start()
     # t = requests.Session()
     # t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
     # args = {

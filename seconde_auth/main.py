@@ -8,7 +8,7 @@ from seconde_auth.config import Config
 from seconde_auth.auth_const import list_test_1,list_test_2
 import csv
 
-class Main:
+class Main_two_jurisdiction:
     def __init__(self):
         # session_admin = requests.Session()
         # self.session_admin: requests.Session = Login(session_admin, Config.admin_user).get_login_session()
@@ -50,7 +50,7 @@ class Main:
                 if admin_res.status_code!=200:
                     raise SystemError('设置权限失败')
                 res_json=self.do_request(i)
-                if res_json['code'] != 403:
+                if res_json['code'] not in  (403,500):
                     rows = [
                         {'接口名': i['name'], '接口id': i['id'], '接口url': i['api'],
                          '接口所有内容': str(i), '返回状态码': res_json['code'], '返回内容': res_json, '测试是否通过': False, '期望值': '无权限',
@@ -183,7 +183,7 @@ class Main:
 
 
 if __name__ == '__main__':
-    Main().start()
+    Main_two_jurisdiction().start()
     # t = requests.Session()
     # t.headers.setdefault('Admin-Token', 'cbe8f393c9b7434fa658c4c6f3643bfd')
     # args = {
